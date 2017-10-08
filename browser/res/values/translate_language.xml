@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language">
+        <item>English</item>
+        <item>EN</item>
+
+        <item>中文(简体)</item>
+        <item>ZH_CN</item>
+
+        <item>中文(繁體)</item>
+        <item>ZH_HK</item>
+
+        <item>hrvatski</item>
+        <item>HR</item>
+
+        <item>PORTUGUÊS</item>
+        <item>PT</item>
+
+        <item>РУССКИЙ</item>
+        <item>RU</item>
+
+        <item>СРПСКИ</item>
+        <item>SR</item>
+
+        <item>УКРАЇНСЬКИЙ</item>
+        <item>UK</item>
+
+        <item>DANSK</item>
+        <item>DK</item>
+
+        <item>EESTI</item>
+        <item>EE</item>
+
+        <item>SUOMEN</item>
+        <item>FI</item>
+
+        <item>LATVIJAS</item>
+        <item>LV</item>
+
+        <item>العربية</item>
+        <item>AR</item>
+
+        <item>فارسی</item>
+        <item>FA</item>
+
+        <item>עִברִית</item>
+        <item>HE</item>
+
+        <item>اردو</item>
+        <item>UR</item>
+
+        <item>LIETUVOS</item>
+        <item>LT</item>
+
+        <item>NORSK</item>
+        <item>NO</item>
+
+        <item>SVENSKA</item>
+        <item>SV</item>
+
+        <item>বাংলা</item>
+        <item>BN</item>
+
+        <item>កម្ពុជា</item>
+        <item>KM</item>
+
+        <item>हिंदी</item>
+        <item>HI</item>
+
+        <item>BAHASA INDONESIA</item>
+        <item>ID</item>
+
+        <item>日本語</item>
+        <item>JA</item>
+
+        <item>한국어</item>
+        <item>KO</item>
+
+        <item>ລາວ</item>
+        <item>Lao</item>
+
+        <item>MELAYU</item>
+        <item>MS</item>
+
+        <item>မြန်မာ</item>
+        <item>MY</item>
+
+        <item>ไทย</item>
+        <item>TH</item>
+
+        <item>TIẾNG VIỆT</item>
+        <item>VN</item>
+
+        <item>SHQIPTARE</item>
+        <item>AL</item>
+
+        <item>PORTUGUÊS(BR)</item>
+        <item>BR/BR-PT</item>
+
+        <item>БЪЛГАРСКИ</item>
+        <item>BG</item>
+
+        <item>CATALÀ</item>
+        <item>CA</item>
+
+        <item>ČEŠTINA</item>
+        <item>CZ</item>
+
+        <item>NEDERLANDS</item>
+        <item>NL</item>
+
+        <item>EUSKARA</item>
+        <item>BS</item>
+
+        <item>FRANÇAIS</item>
+        <item>FR</item>
+
+        <item>FRANÇAIS(CA)</item>
+        <item>FR-CA</item>
+
+        <item>GALEGO</item>
+        <item>GL</item>
+
+        <item>DEUTSCHE</item>
+        <item>DE</item>
+
+        <item>ΕΛΛΗΝΙΚΑ</item>
+        <item>GR</item>
+
+        <item>MAGYAR</item>
+        <item>HU</item>
+
+        <item>ITALIANO</item>
+        <item>IT</item>
+
+        <item>LATINESP</item>
+        <item>MX</item>
+
+        <item>МАКЕДОНСКИ</item>
+        <item>MK</item>
+
+        <item>POLSKIE</item>
+        <item>PL</item>
+
+        <item>ROMÂNĂ</item>
+        <item>RO</item>
+
+        <item>SLOVENSKÝ</item>
+        <item>SK</item>
+
+        <item>SLOVENSKO</item>
+        <item>SI</item>
+
+        <item>ESPAÑOL</item>
+        <item>ES</item>
+
+        <item>TÜRK</item>
+        <item>TR</item>
+    </string-array>
+</resources>

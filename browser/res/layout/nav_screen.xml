@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/tabbar"
+        android:background="@color/navscreen_backgroud_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/newtab"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/accessibility_button_newtab"
+            android:padding="12dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/ic_browser_plus"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp" />
+
+        <ImageView
+            android:id="@+id/tab_mode_switch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:src="@drawable/ic_browser_incognito_switch" />
+
+        <ImageView
+            android:id="@+id/back_ui"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/ic_browser_back_ui"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/tabs_content"
+        android:background="@color/navscreen_backgroud_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabbar">
+
+        <com.blink.browser.view.carousellayoutmanager.CarouselRecyclerView
+            android:id="@+id/tabs_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"/>
+
+        <LinearLayout
+            android:id="@+id/zero_incognito"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zero_incognito_top_margin"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_browser_zero_incognito"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/incognito_home"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

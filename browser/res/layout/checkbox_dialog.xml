@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dialog_horizontal_padding"
+        android:layout_marginStart="@dimen/dialog_horizontal_padding"
+        android:layout_marginTop="@dimen/dialog_content_padding_top"
+        android:textSize="@dimen/dialog_title_size"
+        android:textColor="@color/browser_info_item_title"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/dialog_horizontal_padding"
+        android:layout_marginStart="@dimen/dialog_horizontal_padding"
+        android:layout_marginRight="@dimen/dialog_horizontal_padding"
+        android:layout_marginLeft="@dimen/dialog_horizontal_padding"
+        android:button="@drawable/browser_update_check_box"
+        android:checked="false"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/no_prompt"
+        android:textColor="@color/dialog_content_text_color"
+        android:textSize="@dimen/dialog_button_size"/>
+
+</LinearLayout>

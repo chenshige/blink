@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr">
+
+    <com.blink.browser.ToolBar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/toolbar_background_color"
+        android:layoutDirection="ltr">
+
+        <RelativeLayout
+            android:id="@+id/swipe_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.blink.browser.PageProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progress_bar_height"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/theme_progress_blue_fg_normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_toolbar_height"
+                android:layout_alignParentBottom="true">
+
+
+                <FrameLayout
+                    android:id="@+id/tabswitcher_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/toolbar_native_margin_init"
+                    android:layout_marginStart="@dimen/toolbar_native_margin_init"
+                    android:background="@drawable/browser_common_menu_item_bg"
+                    android:paddingLeft="@dimen/toolbar_menu_bg_padding"
+                    android:paddingRight="@dimen/toolbar_menu_bg_padding">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/tabswitcher_toolbar_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/toolbar_menu_bg_padding"
+                            android:src="@drawable/ic_browser_label"/>
+
+                        <TextView
+                            android:id="@+id/page_number_tab_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:textColor="@color/toolbar_page_number_color"
+                            android:textSize="9sp"/>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menu_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/toolbar_native_margin_init"
+                    android:layout_marginRight="@dimen/toolbar_native_margin_init" >
+
+                    <ImageView
+                        android:id="@+id/menu_toolbar_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/browser_common_menu_item_bg"
+                        android:paddingBottom="@dimen/toolbar_menu_bg_padding"
+                        android:paddingLeft="@dimen/toolbar_menu_bg_padding"
+                        android:paddingRight="@dimen/toolbar_menu_bg_padding"
+                        android:paddingTop="@dimen/toolbar_menu_bg_padding"
+                        android:src="@drawable/ic_browser_more"/>
+
+                    <ImageView
+                        android:id="@+id/stop_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/browser_common_menu_item_bg"
+                        android:paddingBottom="@dimen/toolbar_menu_bg_padding"
+                        android:paddingLeft="@dimen/toolbar_menu_bg_padding"
+                        android:paddingRight="@dimen/toolbar_menu_bg_padding"
+                        android:paddingTop="@dimen/toolbar_menu_bg_padding"
+                        android:src="@drawable/ic_browser_toolbar_close"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/title_loading_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/toolbar_title_margin"
+                    android:layout_marginLeft="@dimen/toolbar_title_margin"
+                    android:layout_marginRight="@dimen/toolbar_title_margin"
+                    android:layout_marginStart="@dimen/toolbar_title_margin"
+                    android:layout_toEndOf="@id/tabswitcher_toolbar"
+                    android:layout_toLeftOf="@id/menu_toolbar"
+                    android:layout_toRightOf="@id/tabswitcher_toolbar"
+                    android:layout_toStartOf="@id/menu_toolbar" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true" >
+
+                        <ImageView
+                            android:id="@+id/safe_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/browser_url_default_safe_icon"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/web_view_title_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="@color/indicator_text_select"
+                            android:textSize="@dimen/title_bar_text_size"
+                            android:layout_toRightOf="@id/safe_icon"
+                            android:layout_marginLeft="6dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!--<include-->
+                    <!--android:id="@+id/toolbar_center_view"-->
+                    <!--layout="@layout/toolbar_center_view_layout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginEnd="@dimen/toolbar_title_margin"-->
+                    <!--android:layout_marginLeft="@dimen/toolbar_title_margin"-->
+                    <!--android:layout_marginRight="@dimen/toolbar_title_margin"-->
+                    <!--android:layout_marginStart="@dimen/toolbar_title_margin"-->
+                    <!--android:layout_toEndOf="@id/tabswitcher_toolbar"-->
+                    <!--android:layout_toLeftOf="@id/menu_toolbar"-->
+                    <!--android:layout_toRightOf="@id/tabswitcher_toolbar"-->
+                    <!--android:layout_toStartOf="@id/menu_toolbar"-->
+                    <!--android:background="@null"/>-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/progress_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_browser_preview_bg"/>
+
+
+        <ImageView
+            android:id="@+id/swipe_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="start"
+            android:scaleType="center"
+            android:src="@drawable/ic_browser_toolbar_back"/>
+
+
+        <ImageView
+            android:id="@+id/swipe_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:scaleType="center"
+            android:src="@drawable/ic_browser_toolbar_preview"/>
+    </com.blink.browser.ToolBar>
+
+    <ViewStub
+        android:id="@+id/view_stub_common_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:inflatedId="@+id/toolbar_common_menu"
+        android:layout="@layout/common_menu"/>
+
+    <ViewStub
+        android:id="@+id/view_stub_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:inflatedId="@+id/toolbar_file"
+        android:layout="@layout/layout_file"/>
+</RelativeLayout>

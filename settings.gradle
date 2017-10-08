@@ -1,0 +1,77 @@
+import java.util.regex.Matcher
+
+def isEmpty(str) {
+    if (str == null) {
+        return true
+    }
+
+    str = str.trim()
+    return str == ""
+}
+
+def initSdkAndBuildToolsVersion() {
+    File build_tools_dir = file(gradle.sdkDir + "/build-tools")
+    FileCollection collection = files { build_tools_dir.listFiles() }
+
+    def tools_version = ""
+    def pattern = ~/^\d{2}\.\d{1,2}\.\d{1,2}$/
+    collection.each { File file ->
+        Matcher matcher = pattern.matcher(file.name.toString())
+        if (tools_version < file.name && matcher.find()) {
+            tools_version = file.name
+        }
+    }
+
+    if (isEmpty(tools_version))
+        return
+
+    gradle.ext.toolsVersion = tools_version
+    gradle.ext.apiVersion = gradle.api != null ? gradle.api.substring(gradle.api.length() - 2).toInteger() : ""
+
+    def api_version = tools_version.substring(0, 2).toInteger()
+    if (gradle.apiVersion != api_version)
+        gradle.ext.apiVersion = api_version
+
+    println "compileSdkVersion : " + gradle.apiVersion
+    println "buildToolsVersion : " + gradle.toolsVersion
+}
+
+def initGradleEnvironment() {
+    println "Initialize Gradle Environment Starting  ..."
+
+    Properties properties = new Properties()
+    File property_file = new File(rootDir.getAbsolutePath() + "/local.properties")
+    properties.load(property_file.newDataInputStream())
+
+    gradle.ext.api = properties.getProperty('sdk.api')
+    gradle.ext.sdkDir = properties.getProperty('sdk.dir')
+    if (isEmpty(gradle.sdkDir)) {
+        println "Error: Please set sdk.dir in local.properties .... "
+        return
+    }
+
+    def major = properties.getProperty('major')
+    def minor = properties.getProperty('minor')
+    def patch = properties.getProperty('patch')
+    def build = properties.getProperty('build')
+    gradle.ext.versionName = major + "." + minor + "." + patch + "." + build
+    if (isEmpty(gradle.ext.versionName)) {
+        gradle.ext.versionName = "1.0.0.0"
+    }
+
+    def versionCode = major + minor + patch + build
+    gradle.ext.versionCode = versionCode.toInteger()
+
+    println "apk version code : " + gradle.ext.versionCode
+    println "apk version name : " + gradle.ext.versionName
+
+    gradle.ext.localDir = properties.getProperty('local.dir')
+
+    initSdkAndBuildToolsVersion()
+
+    println "Initialize Gradle Environment Completed ..."
+}
+
+initGradleEnvironment()
+
+include ':browser', ':wink'

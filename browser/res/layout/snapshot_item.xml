@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/snap_item_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bookmark_item_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:descendantFocusability="blocksDescendants">
+
+    <View
+        android:id="@+id/item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.blink.browser.view.RoundImageView
+        android:id="@+id/snap_item_thumb"
+        android:layout_width="@dimen/history_icon_width"
+        android:layout_height="@dimen/history_icon_width"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/history_icon_left"
+        app:type="rectangle"
+        android:layout_marginLeft="@dimen/history_icon_left" />
+
+    <TextView
+        android:id="@+id/snap_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/bookmark_item_height"
+        android:layout_marginStart="@dimen/history_icon_title_gap"
+        android:layout_toEndOf="@id/snap_item_thumb"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/browser_info_item_title"
+        android:textSize="@dimen/history_title_size"
+        android:layout_marginRight="@dimen/bookmark_item_height"
+        android:layout_marginLeft="@dimen/history_icon_title_gap"
+        android:layout_toRightOf="@id/snap_item_thumb" />
+
+    <ImageView
+        android:id="@+id/snapshot_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:scaleType="center"
+        android:src="@drawable/ic_browser_home_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+</RelativeLayout>

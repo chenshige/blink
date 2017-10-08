@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/settings_list_height"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/settings_list_item_text_marginstart"
+        android:layout_marginEnd="@dimen/settings_list_item_text_marginstart"
+        android:layout_marginLeft="@dimen/settings_list_item_text_marginstart"
+        android:layout_marginStart="@dimen/settings_list_item_text_marginstart">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/select"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_browser_complete"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/content_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toStartOf="@id/select"
+            android:gravity="center_vertical"
+            android:textColor="@color/settings_item_title_normal_color"
+            android:textSize="@dimen/settings_list_item_title_size"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toLeftOf="@id/select" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/settings_list_divider_margin"
+        android:layout_marginStart="@dimen/settings_list_divider_margin"
+        android:layout_marginLeft="@dimen/settings_list_divider_margin"
+        android:layout_marginRight="@dimen/settings_list_divider_margin"
+        android:background="@color/settings_list_divider" />
+
+</RelativeLayout>

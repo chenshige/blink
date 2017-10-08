@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommend_url_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fadingEdge="none"
+    android:overScrollMode="never"
+    android:listSelector="@android:color/transparent"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="@dimen/recommend_url_padding"
+    android:layout_marginRight="@dimen/recommend_url_padding"/>

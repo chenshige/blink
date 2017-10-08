@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:centerColor="@color/file_picker_recyclerview_divider"
+        android:endColor="@color/file_picker_recyclerview_divider"
+        android:startColor="@color/file_picker_recyclerview_divider"
+        android:type="linear" />
+    <size android:height="1dp" />
+
+</shape>

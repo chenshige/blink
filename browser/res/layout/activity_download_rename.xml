@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/settings_title_divider"
+        android:layout_alignParentRight="true" />
+
+    <TableLayout
+        android:id="@+id/default_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dip"
+        android:layout_marginStart="16dip"
+        android:orientation="vertical"
+        android:paddingTop="10dip"
+        android:shrinkColumns="0"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="16dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/file_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bookmark_label_TextColor"
+                android:textSize="12sp"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent">
+
+            <EditText
+                android:id="@+id/filename"
+                style="@style/BrowserEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:inputType="textCapSentences|textNoSuggestions|textWebEditText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bookmark_edit_TextColor"
+                android:textSize="@dimen/history_title_size"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginBottom="24dip"
+            android:layout_marginTop="8dip">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/mb_blue" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

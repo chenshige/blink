@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="browser_window_background">#ffffff</color>
+    <color name="NavigationBarBackground">#ffffff</color>
+    <color name="PopupBackground">#ffffff</color>
+    <color name="accent">#FF1AACA2</color>
+
+    <color name="comboViewActionBarColor">#ffffff</color>
+    <!-- location infobar color -->
+
+    <color name="primary">#ffffff</color>
+    <color name="navigation_bars">#101828</color>
+    <color name="line_color">#19000000</color>
+</resources>

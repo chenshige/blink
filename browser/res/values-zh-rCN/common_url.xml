@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--设置常用推荐网址, 首先设置key,然后设置对应的各个属性-->
+
+    <!--推荐常用url键值-->
+    <string-array name="common_url">
+        <item>baidu_url</item>
+        <item>taobao_url</item>
+        <item>qiyi_url</item>
+        <item>wangyi_url</item>
+    </string-array>
+
+    <!--推荐常用url实例各个属性-->
+    <array name="baidu_url">
+        <item>@string/recommend_baidu</item><!--名称 -->
+        <item>https://m.baidu.com</item> <!--地址-->
+        <item>ic_browser_recommend_baidu</item> <!--图片-->
+        <item>w-4</item>
+        <item>baidu</item>
+    </array>
+    <array name="taobao_url">
+        <item>@string/recommend_taobao</item><!--名称 -->
+        <item>https://m.taobao.com/</item> <!--地址-->
+        <item>ic_browser_recommend_taobao</item> <!--图片-->
+        <item>w-3</item>
+        <item>taobao</item>
+    </array>
+    <array name="qiyi_url">
+        <item>@string/recommend_qiyi</item><!--名称 -->
+        <item>http://m.iqiyi.com</item> <!--地址-->
+        <item>ic_browser_recommend_qiyi</item> <!--图片-->
+        <item>w-2</item>
+        <item>iqiyi</item>
+    </array>
+    <array name="wangyi_url">
+        <item>@string/recommend_wangyi</item><!--名称 -->
+        <item>http://3g.163.com/touch/all</item> <!--地址-->
+        <item>ic_browser_recommend_wangyi</item> <!--图片-->
+        <item>w-1</item>
+        <item>163</item>
+    </array>
+
+
+    <string name="recommend_baidu">百度</string>
+    <string name="recommend_qiyi">爱奇艺</string>
+    <string name="recommend_taobao">淘宝</string>
+    <string name="recommend_wangyi">网易</string>
+
+    <!--推荐常用url键值-->
+    <string-array name="recommend_websites">
+
+        <item>百度</item>
+        <item>https://m.baidu.com</item>
+        <item>ic_browser_recommend_baidu</item> <!--图片-->
+
+        <item>淘宝</item>
+        <item>https://m.taobao.com/</item>
+        <item>ic_browser_recommend_taobao</item> <!--图片-->
+
+        <item>爱奇艺</item>
+        <item>http://m.iqiyi.com</item>
+        <item>ic_browser_recommend_qiyi</item> <!--图片-->
+
+        <item>网易</item>
+        <item>http://3g.163.com/touch/all</item>
+        <item>ic_browser_recommend_wangyi</item> <!--图片-->
+
+    </string-array>
+
+</resources>

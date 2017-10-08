@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:background="@drawable/shape_bg_add_image"
+    android:layout_marginStart="12dp"
+    android:layout_marginLeft="12dp">
+
+    <ImageView
+        android:id="@+id/choose"
+        android:background="@color/white"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_feedback_close"
+        android:layout_gravity="end"/>
+
+    <ImageView
+        android:id="@+id/icon_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_broswer_feedback_add_images" />
+
+</FrameLayout>

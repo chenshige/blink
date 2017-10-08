@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="application_name">Blink</string>
+    <string name="application_fullname">Blink Browser</string>
+    <string name="umeng_appkey">5908c5e96e27a431db000baa</string>
+    <!--Not Required Translation-->
+    <string name="server_url">http://api.browser.fly2tech.com/</string>
+    <string name="common_url">http://api.fly2tech.com/</string>
+    <string name="download_web_icons_url">http://tcl-icloudcdn.tclclouds.com/mig-portal/mig-portal/browser/hot_web_icons.zip</string>
+
+    <!--&lt;!&ndash; Toast to show the user after they try to open the file picker but no apps on the-->
+    <!--system can provide a file [CHAR-LIMIT=NONE]&ndash;&gt;-->
+    <string name="uploads_disabled">File uploads are disabled.</string>
+    <!--&lt;!&ndash; Name of menu item of a new tab.  Also used in the title bar when displaying a new tab &ndash;&gt;-->
+    <string name="new_tab">New tab</string>
+    <!--&lt;!&ndash; Name of menu item of a new incognito tab.  Also used in the-->
+    <!--title bar when displaying a new tab [CHAR LIMIT=30] &ndash;&gt;-->
+    <string name="new_incognito_tab">New incognito tab</string>
+    <!--&lt;!&ndash; Name of tab containing the user's saved pages, organized by time created [CHAR LIMIT=20] &ndash;&gt;-->
+    <string name="tab_snapshots">Saved pages</string>
+    <!--&lt;!&ndash; Toast shown when a history item's star is clicked off, removing its bookmark &ndash;&gt;-->
+    <string name="removed_from_bookmarks">Removed from bookmarks.</string>
+    <!--&lt;!&ndash; Sign-in dialog &ndash;&gt;-->
+    <!--&lt;!&ndash; This is used as the title of a dialog which is used to sign in to a secure site.-->
+    <!--"%s1"is replaced with the host and "%s2" with realm &ndash;&gt;-->
+    <string name="sign_in_to">Sign in to %1$s \"%2$s\"</string>
+    <!--&lt;!&ndash; Prompt for an input box that allows the user to enter their login name &ndash;&gt;-->
+    <string name="username">Name</string>
+    <!--&lt;!&ndash; Prompt for an input box that allows the user to enter their password &ndash;&gt;-->
+    <string name="password">Password</string>
+    <!--&lt;!&ndash; The label on the "sign in" button &ndash;&gt;-->
+    <string name="action">Sign in</string>
+    <!--&lt;!&ndash; The name of the add bookmark page activity.&ndash;&gt;-->
+    <string name="bookmarks_add_page">Save bookmark</string>
+    <!--&lt;!&ndash; The name of the bookmarks and history search suggestion source.  &ndash;&gt;-->
+    <string name="bookmarks_search">Browser</string>
+    <!--&lt;!&ndash; Label for a cancel button.  It is used for multiple cancel buttons in different contexts &ndash;&gt;-->
+    <string name="cancel">Cancel</string>
+    <!--&lt;!&ndash; Label for a confirm button.  Used in multiple contexts. &ndash;&gt;-->
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="select">Select</string>
+    <string name="modify">Modify</string>
+    <string name="add_to_homepage">Add to homepage</string>
+    <string name="add_to_desktop">Desktop</string>
+    <string name="rename">Rename files</string>
+    <string name="copy_link">Copy link</string>
+    <string name="share">Share</string>
+    <string name="most_visited">Most visited</string>
+    <string name="allow">Allow</string>
+    <string name="go_back">Go back</string>
+    <string name="undo">Undo</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bookmark_list">Bookmarks</string>
+    <string name="go">Go</string>
+    <string name="clear">Clear</string>
+    <string name="clear_default_browser">Clear setting as default browser</string>
+    <string name="already_cleared">Cleared</string>
+    <string name="open">Open</string>
+    <string name="history">History</string>
+    <string name="remember_preference">Remember preference</string>
+    <!--&lt;!&ndash; Label for a button to disallow a particular popup from opening &ndash;&gt;-->
+    <string name="block">Block</string>
+    <string name="clear_data_success">Clear success</string>
+    <string name="exit">Exit</string>
+    <string name="no_thanks">NO, thanks</string>
+    <string name="clear_all">Clear all</string>
+    <string name="later">Later</string>
+    <string name="enable">Enable</string>
+
+    <!--&lt;!&ndash; Menu item &ndash;&gt;-->
+    <string name="page_info">Page info</string>
+    <!--&lt;!&ndash; Label for a button on an SSL error dialog that allows the user to see-->
+    <!--Page info screen for the current page &ndash;&gt;-->
+    <string name="page_info_view">View page info</string>
+    <!--&lt;!&ndash; Page Info dialog strings &ndash;&gt;-->
+    <!--&lt;!&ndash; Noun.  The url for the current page. Displayed on the Page Info-->
+    <!--screen. &ndash;&gt;-->
+    <string name="page_info_address">Address:</string>
+
+    <!--&lt;!&ndash; SSL Error dialogs &ndash;&gt;-->
+    <string name="ssl_warnings_header">There are problems with the security certificate for this site.</string>
+    <!--&lt;!&ndash; Label for a button on an SSL error dialog that lets the user continue-->
+    <!--and view the page despite the error &ndash;&gt;-->
+    <string name="ssl_continue">Continue</string>
+    <!--&lt;!&ndash; Title for an SSL error dialog  &ndash;&gt;-->
+    <string name="security_warning">Security warning</string>
+    <!--&lt;!&ndash; Label for a button on an SSL error dialog that lets the user view the-->
+    <!--certificate &ndash;&gt;-->
+    <string name="view_certificate">View certificate</string>
+
+    <string name="ssl_certificate">Security certificate</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_untrusted">This certificate isn\'t from a trusted authority.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_mismatch">The name of the site doesn\'t match the name on the certificate.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_expired">This certificate has expired.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_not_yet_valid">This certificate isn\'t valid yet.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_date_invalid">This certificate has an invalid date.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_invalid">This certificate is invalid.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_certificate_is_valid">This certificate is valid.</string>
+    <!--&lt;!&ndash; Message in an SSL Error dialog &ndash;&gt;-->
+    <string name="ssl_unknown">Unknown certificate error.</string>
+
+    <!--&lt;!&ndash; Toast informing the user that loading has stopped for the current page. &ndash;&gt;-->
+    <string name="stopping">Stopping\u2026</string>
+    <!--&lt;!&ndash; Menu item to stop the current page from loading. &ndash;&gt;-->
+    <!--&lt;!&ndash; Menu item to reload or refresh the current page. &ndash;&gt;-->
+
+    <string name="location">Address</string>
+    <!--&lt;!&ndash; Field label in Bookmark dialog box: refers to the account to save the bookmark to &ndash;&gt;-->
+    <string name="account">Account</string>
+    <!--&lt;!&ndash; Field label in Bookmark dialog box: refers to the folder in which to save the bookmark &ndash;&gt;-->
+    <string name="containing_folder">Add to</string>
+    <!--&lt;!&ndash; Default name for a new folder and label for a button that allows the user to start a new folder-->
+    <!--in the add bookmark dialog &ndash;&gt;-->
+    <string name="new_folder">New folder</string>
+    <!--&lt;!&ndash; Context menu item to edit a folder [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="edit_folder">Edit folder</string>
+    <!--&lt;!&ndash; Context menu item to delete a folder [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="delete_folder">Delete folder</string>
+    <!--&lt;!&ndash; Label stating that the currently open folder has no subfolders-->
+    <!--in the add bookmark dialog [CHAR-LIMIT=none]&ndash;&gt;-->
+    <string name="no_subfolders">No subfolders.</string>
+    <!--&lt;!&ndash; Menu item to save the newly created bookmark to the home screen. [CHAR-LIMIT=30]&ndash;&gt;-->
+    <string name="add_to_homescreen_menu_option">Home screen</string>
+    <!--&lt;!&ndash; Menu item to open a picker to determine which folder to save a bookmark in. [CHAR-LIMIT=30]&ndash;&gt;-->
+    <string name="add_to_other_folder_menu_option">Other folder</string>
+    <!--&lt;!&ndash; Field label in Bookmark dialog box: title that the user wishes to use for the bookmark &ndash;&gt;-->
+    <string name="name">Label</string>
+    <!--&lt;!&ndash; Initial value in Location field in Bookmark dialog box &ndash;&gt;-->
+    <string name="http">http://</string>
+    <!--&lt;!&ndash; Menu item that opens a dialog to save a bookmark for the current page [CHAR LIMIT=30] &ndash;&gt;-->
+    <!--&lt;!&ndash; Title of the dialog to bookmark a page &ndash;&gt;-->
+    <string name="bookmark_this_page">Bookmark this page</string>
+    <!--&lt;!&ndash; Option on bookmark dialog to remove the bookmark [CHAR LIMIT=30] &ndash;&gt;-->
+    <string name="remove">Remove</string>
+    <!--&lt;!&ndash; Menu item on the bookmarks page, to edit an existing bookmark &ndash;&gt;-->
+    <string name="edit_bookmark">Edit bookmark</string>
+    <!--&lt;!&ndash; Context menu item to start a shortcut to the bookmark on the desktop [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="create_shortcut_bookmark">Add shortcut to home</string>
+    <!--&lt;!&ndash; Menu item to remove the currently highlighted bookmark&ndash;&gt;-->
+    <string name="remove_bookmark">Delete bookmark</string>
+    <!--&lt;!&ndash; Menu item to remove the currently highlighted history entry from the list of previously visited sites &ndash;&gt;-->
+    <!--&lt;!&ndash; Context menu item for setting the bookmark/history item as the homepage &ndash;&gt;-->
+    <string name="set_as_homepage">Set as homepage</string>
+    <!--&lt;!&ndash; Toast informing the user that their action to save a bookmark has succeeded &ndash;&gt;-->
+    <string name="bookmark_saved">Saved to bookmarks</string>
+    <!--&lt;!&ndash; Toast informing the user that their action to save a bookmark did not succeed &ndash;&gt;-->
+    <string name="bookmark_not_saved">Couldn\'t save bookmark</string>
+    <!--&lt;!&ndash; Error that appears in the title of Bookmark dialog when user selects OK with empty Name field &ndash;&gt;-->
+    <string name="bookmark_needs_title">"Bookmark must have a name"</string>
+    <!--&lt;!&ndash; Error that appears in the title of Bookmark dialog when user selects OK with empty Location field &ndash;&gt;-->
+    <string name="bookmark_needs_url">"Bookmark must have a location"</string>
+    <!--&lt;!&ndash; Error that appears in the title of Bookmark dialog when user selects OK with invalid URL &ndash;&gt;-->
+    <string name="bookmark_url_not_valid">This URL isn\'t valid</string>
+    <!--&lt;!&ndash; Error that appears in the Bookmark dialog when user selects OK with a URL of a type we cannot bookmark &ndash;&gt;-->
+    <string name="bookmark_cannot_save_url">This URL can\'t be bookmarked</string>
+    <!--&lt;!&ndash; Confirmation dialog message confirming that the user wishes to delete-->
+    <!--the bookmark they selected for deletion &ndash;&gt;-->
+    <string name="delete_bookmark_warning">Delete bookmark \"%s\"?</string>
+    <!--&lt;!&ndash; Context menu item to open every bookmark in a folder in new tabs [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="open_all_in_new_window">Open all in new tabs</string>
+    <!--&lt;!&ndash; Menu item to switch to text selection mode for copy and paste. &ndash;&gt;-->
+    <string name="select_dot">Select text</string>
+    <!--&lt;!&ndash; Menu item to close all other tabs [CHAR LIMIT=40] &ndash;&gt;-->
+    <!--&lt;!&ndash; Secondary name for the Activity "BrowserBookmarksPage" &ndash;&gt;-->
+    <string name="shortcut_bookmark">Bookmark</string>
+    <!--&lt;!&ndash; Title for the activity asking the user to select a bookmark [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="shortcut_bookmark_title">Choose a bookmark</string>
+    <!--&lt;!&ndash; Menu item for saving a page for offline reading. This is a view-only snapshot of the page. [CHAR LIMIT=50] &ndash;&gt;-->
+    <!--&lt;!&ndash; The number of bookmarks in a folder [CHAR LIMT=50] &ndash;&gt;-->
+    <string name="contextheader_folder_bookmarkcount">%d bookmarks</string>
+    <!--&lt;!&ndash; No bookmarks in the folder [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="contextheader_folder_empty">Empty folder</string>
+    <!--&lt;!&ndash; Context Menu item to open the currently selected link in a new-->
+    <!--window. &ndash;&gt;-->
+    <string name="contextmenu_openlink_newwindow">Open in new tab</string>
+    <string name="contextmenu_openlink_newwindow_background">Open in background</string>
+    <!--&lt;!&ndash; Context Menu item to save the webpage referred to by this link to the-->
+    <!--SD card (external storage) &ndash;&gt;-->
+    <string name="contextmenu_savelink">Save link</string>
+    <!--&lt;!&ndash; Context Menu item to send the url of the selected link to someone else,-->
+    <!--via Gmail or another app [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="contextmenu_sharelink">Share link</string>
+    <!--&lt;!&ndash; Context Menu item &ndash;&gt;-->
+    <string name="contextmenu_copy">Copy</string>
+    <!--&lt;!&ndash; Context Menu item to copy the url of the selected link to the-->
+    <!--clipboard &ndash;&gt;-->
+    <string name="contextmenu_copylink">Copy link URL</string>
+    <!--&lt;!&ndash; Context Menu item to save the image to external storage &ndash;&gt;-->
+    <string name="contextmenu_download_image">Save image</string>
+    <!--&lt;!&ndash; Context Menu item to view the image by itself in the browser &ndash;&gt;-->
+    <string name="contextmenu_view_image">View image</string>
+    <!--&lt;!&ndash; Context Menu item to set the image as the home screen wallpaper &ndash;&gt;-->
+    <string name="contextmenu_set_wallpaper">Set as wallpaper</string>
+
+    <!--&lt;!&ndash; Context Menu item to open the dialer app with the selected phone number-->
+    <!--&ndash;&gt;-->
+    <string name="contextmenu_dial_dot">Dial\u2026</string>
+    <!--&lt;!&ndash; Context Menu item to add the selected phone number to the address book.-->
+    <!--&ndash;&gt;-->
+    <string name="contextmenu_add_contact">Add contact</string>
+    <!--&lt;!&ndash; Context Menu item to send an email using the selected email address.&ndash;&gt;-->
+    <string name="contextmenu_send_mail">Send email</string>
+    <!--&lt;!&ndash; Context Menu item to show the currently selected address in the Maps-->
+    <!--application &ndash;&gt;-->
+    <string name="contextmenu_map">Map</string>
+
+    <!--&lt;!&ndash; Title of the dialog used for selecting the application that should be-->
+    <!--used for sharing a link (e.g. Gmail or another app). See also-->
+    <!--contextmenu_sharelink above &ndash;&gt;-->
+    <string name="choosertitle_sharevia">Share via</string>
+
+    <!--&lt;!&ndash; Settings screen strings &ndash;&gt;-->
+    <!--&lt;!&ndash; Menu item to open the Settings screen &ndash;&gt;-->
+    <string name="menu_preferences">Settings</string>
+
+    <!--advanced_preferences -->
+    <string name="pref_ad_block">AD Block</string>
+    <string name="pref_ad_block_count">Clear Ad block history</string>
+    <string name="pref_ad_block_count_summary">%d ads  blocked</string>
+    <string name="pref_ad_block_count_dialog_message">Clear blocked ad count?</string>
+    <string name="pref_restore_tabs_on_startup">Restore tabs on startup</string>
+    <string name="pref_notification_tool_show">Show Search Bar in Notification Panel</string>
+    <!--&lt;!&ndash; Settings label &ndash;&gt;-->
+    <string name="pref_content_cookies">Enable cookies in incognito</string>
+    <string name="pref_content_cookies_summary">Some sites require cookies to login or display normal.</string>
+    <!-- Summary for whether or not to force-enable user scalablity (aka, zoom) [CHAR LIMIT=30] -->
+    <string name="pref_force_userscalable_summary">Override a website\'s request to control zoom behavior</string>
+    <!--&lt;!&ndash; Settings label &ndash;&gt;-->
+    <string name="pref_content_autofit">Auto-fit pages</string>
+    <!-- Settings summary -->
+    <string name="pref_content_autofit_summary">Format webpages to fit the screen</string>
+    <string name="pref_content_block_popups">Block pop-ups</string>
+    <!-- Settings screen, setting option name -->
+    <string name="pref_default_text_encoding">Text encoding</string>
+    <!-- Options in the Default encoding dialog box -->
+    <string-array name="pref_default_text_encoding_choices">
+        <item>Latin-1 (ISO-8859-1)</item>
+        <item>Unicode (UTF-8)</item>
+        <item>Chinese (GBK)</item>
+        <item>Chinese (Big5)</item>
+        <item>Japanese (ISO-2022-JP)</item>
+        <item>Japanese (SHIFT_JIS)</item>
+        <item>Japanese (EUC-JP)</item>
+        <!-- No need to translate a EUC-KR part, and there is no string length limits. -->
+        <item>Korean (EUC-KR)</item>
+        <!-- TODO: We should add a lot more encodings.  -->
+    </string-array>
+    <!-- Do not translate. Actual encoding values. Must be valid text encodings understandable from WebKit. -->
+    <string-array name="pref_default_text_encoding_values" translatable="false">
+        <item>Latin-1</item>
+        <item>UTF-8</item>
+        <item>GBK</item>
+        <item>Big5</item>
+        <item>ISO-2022-JP</item>
+        <item>SHIFT_JIS</item>
+        <item>EUC-JP</item>
+        <item>EUC-KR</item>
+    </string-array>
+    <string name="pref_default_text_encoding_default" translatable="true">UTF-8</string>
+    <!-- Settings label -->
+    <string name="pref_extras_website_settings">Website settings</string>
+    <!-- Settings summary -->
+    <string name="pref_extras_website_settings_summary">Advanced settings for individual websites</string>
+
+
+    <!--settings_preferences-->
+    <!-- Settings label -->
+    <string name="pref_content_search_engine">Set search engine</string>
+    <!--&lt;!&ndash; Settings summary &ndash;&gt;-->
+    <string name="pref_search_engine_dialog_title">Choose engine</string>
+    <string name="pref_web_browsing">Web browsing</string>
+    <string name="pref_download_path_setting_screen_title">Custom download path</string>
+    <!-- Settings screen, section title [CHAR-LIMIT=50] -->
+    <string name="pref_privacy_security_title">Privacy &amp; Security</string>
+    <string name="pref_privacy_security_title_summary">Allow the browser to remember passwords, saved forms, etc.</string>
+    <!-- Settings summary -->
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_data">Clear data</string>
+    <string-array name="pref_clear_data_choices">
+        <item>Cache</item>
+        <item>Cookies</item>
+        <item>Forms</item>
+        <item>History</item>
+        <item>Passwords</item>
+        <item>Location access</item>
+    </string-array>
+    <string-array name="pref_clear_data_values">
+        <item>privacy_clear_cache</item>
+        <item>privacy_clear_cookies</item>
+        <item>privacy_clear_form_data</item>
+        <item>privacy_clear_history</item>
+        <item>privacy_clear_passwords</item>
+        <item>privacy_clear_geolocation_access</item>
+    </string-array>
+    <string-array name="pref_clear_data_descriptions">
+        <item>Clear locally cached contents and databases</item>
+        <item>Clear all cookies</item>
+        <item>Clear all saved form data</item>
+        <item>Clear all browsing history</item>
+        <item>Clear all saved accounts and passwords</item>
+        <item>Cancel permission to all websites to obtain your location</item>
+    </string-array>
+    <string name="pref_extras_title">Advanced</string>
+    <string name="pref_feedback">Feedback</string>
+    <string name="pref_default_browser">Set default browser</string>
+    <string name="pref_confirm_on_exit">Confirm on exit</string>
+    <string name="pref_show_status_bar">The status bar is displayed</string>
+    <string name="pref_about">About</string>
+    <string name="pref_app_score">Rate us</string>
+    <!-- Settings label -->
+    <string name="pref_extras_reset_default">Reset to default</string>
+    <!-- Settings summary -->
+    <!-- Confirmation dialog message -->
+    <string name="pref_extras_reset_default_dlg">Revert settings to default values?</string>
+
+    <!--WebBrowsing_preferences-->
+    <string name="pref_content_javascript">Enable JavaScript</string>
+    <!--&lt;!&ndash; Content description for user agent switcher [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_uaswitch">Switch user agent</string>
+    <string-array name="pref_user_agent_choices">
+        <item>Android</item>
+        <item>iPhone</item>
+        <item>iPad</item>
+        <item>Computer</item>
+    </string-array>
+    <!--Do not translate -->
+    <string-array name="pref_user_agent_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="pref_font_size">Text size</string>
+    <string name="pref_font_size_summary">Adjust size of text and fonts</string>
+    <string name="pref_force_userscalable">Force enable zoom</string>
+
+    <!--&lt;!&ndash; Settings category for autofill under general. [CHAR-LIMIT=50] &ndash;&gt;-->
+    <string name="pref_general_autofill_title">Auto-fill</string>
+    <!-- Checkbox setting for enabling/disabling the form AutoFill feature [CHAR-LIMIT=32] -->
+    <string name="pref_autofill_enabled">Form auto-fill</string>
+    <!-- Settings summary for the form AutoFill feature. [CHAR-LIMIT=none] -->
+    <string name="pref_autofill_enabled_summary">Fill out web forms with a single touch</string>
+    <!--&lt;!&ndash; Settings button label that to pick what to set the homepage to [CHAR LIMIT=40] &ndash;&gt;-->
+    <string name="pref_set_homepage_to">Set to</string>
+
+
+    <!--privacy_security_preferences-->
+    <!-- Settings label -->
+    <string name="pref_security_accept_cookies">Accept cookies</string>
+    <!-- Settings summary -->
+    <string name="pref_security_accept_cookies_summary">Allow sites to save and read cookie data</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_enable_geolocation">Enable location</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_enable_geolocation_summary">Allow sites to request access to your location</string>
+    <!--&lt;!&ndash; Settings label &ndash;&gt;-->
+    <string name="pref_security_save_form_data">Remember form data</string>
+    <!-- Settings summary -->
+    <string name="pref_security_save_form_data_summary">Remember the data I entered in the form</string>
+    <!--&lt;!&ndash; Settings label &ndash;&gt;-->
+    <string name="pref_security_remember_passwords">Remember passwords</string>
+    <!-- Settings summary -->
+    <string name="pref_security_remember_passwords_summary">Save usernames and passwords for websites</string>
+    <!-- Settings label -->
+    <string name="pref_security_show_security_warning">Show security warnings</string>
+    <!-- Settings summmary -->
+    <string name="pref_security_show_security_warning_summary">Show warning if there\'s a problem with a site\'s security</string>
+    <!-- Settings summmary -->
+    <string name="pref_download_with_ADM">Download with ADM</string>
+    <!-- Settings summmary -->
+    <string name="pref_show_download_dialog">Show download dialog</string>
+
+    <string name="pref_download">Download settings</string>
+    <!--text_size_preferences-->
+    <!--&lt;!&ndash; Label for text scaling (percent) [CHAR LIMIT=30] &ndash;&gt;-->
+    <!--&lt;!&ndash; Settings text size options; appear in Text size dialog box [CHAR LIMIT=30] &ndash;&gt;-->
+    <string-array name="pref_text_size_choices">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string name="pref_text_zoom">Text scaling</string>
+    <!-- Label for minimum font size [CHAR LIMIT=30] -->
+    <string name="pref_min_font_size">Minimum font size</string>
+    <!-- Label for the current minimum font size value [CHAR LIMIT=6] -->
+    <string name="pref_min_font_size_value">%dPT</string>
+
+
+    <!--debug_preferences-->
+    <!-- Do not tranlsate.  Development option -->
+    <string name="pref_development_hardware_accel" translatable="false">Enable OpenGL Rendering</string>
+    <!-- Do not tranlsate.  Development option -->
+    <string name="pref_development_hardware_accel_skia" translatable="false">Enable HW Accelerated Skia</string>
+    <!-- Do not tranlsate.  Development option -->
+    <string name="pref_development_uastring" translatable="false">UAString</string>
+    <!-- Do not tranlsate.  Development option -->
+    <string-array name="pref_development_ua_choices" translatable="false">
+        <item>Android</item>
+        <item>Desktop</item>
+        <item>iPhone</item>
+        <item>iPad</item>
+        <item>Froyo-N1</item>
+        <item>Honeycomb-Xoom</item>
+    </string-array>
+    <!-- Do not tranlsate.  Development option -->
+    <string-array name="pref_development_ua_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <!-- Do not tranlsate.  Development option -->
+    <string name="pref_development_visual_indicator" translatable="false">Enable Visual Indicator</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_cpu_upload_path" translatable="false">Enable Cpu Upload Path</string>
+    <string name="pref_development_error_console" translatable="false">Show JavaScript Console</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_single_column_rendering" translatable="false">Single column rendering</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_viewport" translatable="false">Use wide viewport</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_normal_rendering" translatable="false">Normal rendering</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_trace" translatable="false">Enable tracing</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="pref_development_nav_dump" translatable="false">Enable nav cache dump</string>
+    <!--&lt;!&ndash; Do not tranlsate.  Development option &ndash;&gt;-->
+    <string name="js_engine_flags" translatable="false">Set JS flags</string>
+
+
+    <string name="pref_wifi_only" translatable="false">WIFI_ONLY</string>
+    <string name="pref_always" translatable="false">ALWAYS</string>
+
+    <string name="browserFrameNetworkErrorLabel">Connection problem</string>
+    <!--&lt;!&ndash; Title for a dialog displayed when the browser runs into a file label-->
+    <!--error &ndash;&gt;-->
+    <string name="browserFrameFileErrorLabel">File problem</string>
+    <!--&lt;!&ndash; Dialog box message &ndash;&gt;-->
+    <string name="browserFrameFormResubmitMessage">The page you\'re trying to view contains data that has already been submitted (\"POSTDATA\"). If you resend the data, any action the form on the page carried out (such as a search or online purchase) will be repeated.</string>
+    <!--no Internet connection.</string>-->
+    <!--&lt;!&ndash; Menu item &ndash;&gt;-->
+    <string name="clear_history">Clear history</string>
+    <!--&lt;!&ndash; Appears on History screen if no history is found &ndash;&gt;-->
+    <string name="empty_history">You have not any history</string>
+    <!--&lt;!&ndash; Displayed at the top of the bookmarks page.  When clicked, it bookmarks the page the browser is currently showing &ndash;&gt;-->
+    <string name="add_new_bookmark">Add bookmark</string>
+    <!--&lt;!&ndash; Verb placed in front of a screenshot of a web page that, when clicked,-->
+    <!--will add that page to bookmarks &ndash;&gt;-->
+    <!--<string name="add_bookmark_short">Add</string>-->
+    <string name="find_on_page">Find on page</string>
+    <!--&lt;!&ndash; This string is for the browser "Go To" UI. &ndash;&gt;-->
+    <!--&lt;!&ndash; This is the hint text shown in the Go To widget, before text is entered. &ndash;&gt;-->
+    <string name="search_hint">Search or Type URL</string>
+    <!--&lt;!&ndash; The string used to describe the browser as a searchable item within system search settings. &ndash;&gt;-->
+    <string name="search_settings_description">Bookmarks and web history</string>
+
+    <!--&lt;!&ndash; Message in a dialog telling the user that they cannot open any more-->
+    <!--windows because the limit has been reached. &ndash;&gt;-->
+    <string name="too_many_windows_dialog_message">Can\'t open a new tab until you close one.</string>
+    <!--&lt;!&ndash; Title for a dialog informing the user that they cannot open a subwindow-->
+    <!--because only one can be open at a time. &ndash;&gt;-->
+    <string name="too_many_subwindows_dialog_title">Pop-up already open</string>
+    <!--&lt;!&ndash; Message for a dialog informing the user that they cannot open a-->
+    <!--subwindow because only one can be open at a time. &ndash;&gt;-->
+    <string name="too_many_subwindows_dialog_message">Only one pop-up can be open at a time.</string>
+
+    <!--&lt;!&ndash; Download History UI strings &ndash;&gt;-->
+    <!--&lt;!&ndash; Dialog title &ndash;&gt;-->
+    <string name="download_no_sdcard_dlg_title" product="default">No SD card</string>
+    <!--&lt;!&ndash; Dialog message &ndash;&gt;-->
+    <string name="download_no_sdcard_dlg_msg" product="default">An SD card is required to download %s.</string>
+    <!--&lt;!&ndash; Title for a dialog informing the user that the SD card used for-->
+    <!--external storage is busy so they cannot download anything &ndash;&gt;-->
+    <string name="download_sdcard_busy_dlg_title" product="default">SD card unavailable</string>
+    <!--&lt;!&ndash; Message for a dialog informing the user that the SD card used for-->
+    <!--external storage is busy so they cannot download anything.  Informs-->
+    <!--the user how to enable SD card storage &ndash;&gt;-->
+    <string name="download_sdcard_busy_dlg_msg" product="default">The SD card is busy. To allow downloads, touch Turn Off USB Storage in the notification.</string>
+
+    <!--&lt;!&ndash; Toast for a download which cannot begin because the URL is not http or https &ndash;&gt;-->
+    <string name="cannot_download">Can only download \"http\" or \"https\" URLs.</string>
+    <!--&lt;!&ndash; Message in the list of items which have received download requests-->
+    <!--telling their status.  This message states that the download has not-->
+    <!--yet begun &ndash;&gt;-->
+    <string name="download_pending">Starting download\u2026</string>
+
+    <!--&lt;!&ndash; Do not translate.  Testing only &ndash;&gt;-->
+
+    <!--&lt;!&ndash; The default homepage. &ndash;&gt;-->
+    <string name="homepage_base" translatable="false">blink-native://homepage</string>
+
+    <!-- Default Bookmarks -->
+    <string-array name="bookmarks" translatable="false"></string-array>
+
+    <!--&lt;!&ndash; The description of the suggestion that lets the user search the web for the query currently-->
+    <!--in the text field. &ndash;&gt;-->
+    <string name="search_the_web">Search the web</string>
+
+    <!--&lt;!&ndash; HTML5 dialogs &ndash;&gt;-->
+    <!--&lt;!&ndash; Used as a status bar notification when the browser is running out of space trying to allocate or increase the database quota for an HTML5 databae or application cache. &ndash;&gt;-->
+    <string name="webstorage_outofspace_notification_title">Browser storage full</string>
+    <string name="webstorage_outofspace_notification_text">Touch to free up space.</string>
+    <!--&lt;!&ndash; Used in the Browser Settings &ndash;&gt;-->
+    <string name="webstorage_clear_data_title">Clear stored data</string>
+
+    <!--&lt;!&ndash; Strings used in the summary of origins &ndash;&gt;-->
+    <string name="webstorage_origin_summary_mb_stored">MB stored on your phone</string>
+    <!--&lt;!&ndash; String shown in a progress view while a video is loading, before it starts playing &ndash;&gt;-->
+    <string name="loading_video">Loading video\u2026</string>
+    <!--&lt;!&ndash; Permissions prompt &ndash;&gt;-->
+    <string name="permissions_prompt_message">%1$s wants to use your %2$s.</string>
+    <string name="permissions_prompt_deny">Deny</string>
+    <string name="resource_protected_media_id">protected media ID</string>
+    <string name="resource_video_capture">camera</string>
+    <string name="resource_audio_capture">microphone</string>
+    <string name="geolocation_permissions_prompt_message">%s wants to know your location</string>
+    <string name="geolocation_permissions_prompt_share">Share location</string>
+    <string name="geolocation_permissions_prompt_dont_share">Decline</string>
+    <!--&lt;!&ndash; Permissions prompt toast &ndash;&gt;-->
+    <string name="geolocation_permissions_prompt_toast_allowed">This site can access your location. Change this on the Settings &gt; Advanced &gt; Website Settings.</string>
+    <string name="geolocation_permissions_prompt_toast_disallowed">This site cannot access your location. Change this on the Settings &gt; Advanced &gt; Website Settings.</string>
+    <!--&lt;!&ndash; Settings -> Advanced -> Website settings -> <origin> &ndash;&gt;-->
+    <string name="geolocation_settings_page_title">Cancel permission  to obtain your location</string>
+    <string name="geolocation_settings_page_summary_allowed">This site can currently access your location</string>
+    <string name="geolocation_settings_page_summary_not_allowed">This site can\'t currently access your location</string>
+    <!--&lt;!&ndash; Settings page dialog &ndash;&gt;-->
+    <string name="geolocation_settings_page_dialog_message">Clear location access for this website?</string>
+    <string name="website_settings_list_header_text">Location Access</string>
+
+    <!--&lt;!&ndash; Text in the progress dialog when we are setting an image as the home screen wallpaper. &ndash;&gt;-->
+    <string name="progress_dialog_setting_wallpaper">Setting wallpaper\u2026</string>
+
+    <string name="error_console_header_text_minimized" translatable="false">Show JavaScript console</string>
+    <string name="error_console_header_text_maximized" translatable="false">JavaScript console</string>
+    <string name="error_console_eval_text_hint" translatable="false">Evaluate JavaScript</string>
+    <string name="error_console_eval_button_text" translatable="false">Evaluate</string>
+
+    <!--&lt;!&ndash; The string that is displayed when there are no bookmarks to display.-->
+    <!--This is centered in the middle of the screen [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="empty_bookmarks_folder">Your bookmarks are empty</string>
+
+    <!--&lt;!&ndash; The folder name for the special "Other Bookmarks" folder created by Chrome [CHAR LIMIT=24] &ndash;&gt;-->
+    <string name="other_bookmarks">Other Bookmarks</string>
+
+    <!--&lt;!&ndash; Description for a dialog asking the user what they want to do with their bookmarks when adding a sync account [CHAR-LIMIT=none] &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Button allowing users to remove all of their existing bookmarks when setting up syncing with their bookmarks stored in Google Chrome [CHAR-LIMIT=64] &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Toast to inform the user that the maximum number of tabs has been-->
+    <!--reached. [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="max_tabs_warning">No more tabs available</string>
+    <!--&lt;!&ndash; Name for the user's unsynced, local bookmarks [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="local_bookmarks">Local</string>
+    <!--&lt;!&ndash; Empty text for the "saved pages" tab that is shown when no saved pages exist. [CHAR LIMIT=None] &ndash;&gt;-->
+    <string name="empty_snapshots_folder">No save page</string>
+    <!--&lt;!&ndash; Menu option to delete the currently selected saved page [CHAR LIMIT=50] &ndash;&gt;-->
+    <string name="remove_snapshot">Delete saved page</string>
+    <!--&lt;!&ndash; Popup menu option to load the live version of a saved page [CHAR LIMIT=20] &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Content description for forward button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_forward">Go forward</string>
+    <!--&lt;!&ndash; Content description for refresh button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_refresh">Refresh page</string>
+    <!--&lt;!&ndash; Content description for stop button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_stop">Stop page load</string>
+    <!--&lt;!&ndash; Content description for add bookmark button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_addbookmark">Bookmark page</string>
+    <!--&lt;!&ndash; Content description for search button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_search">Search</string>
+    <!--&lt;!&ndash; Content description for voice search button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_voice">Start voice search</string>
+    <!--&lt;!&ndash; Content description for close tab button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_closetab">Close tab</string>
+    <!--&lt;!&ndash; Content description for new tab button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_newtab">Open new tab</string>
+    <!--&lt;!&ndash; Content description for new incognito tab button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <!--&lt;!&ndash; Content description for clear button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_clear">Clear input</string>
+    <!--&lt;!&ndash; Content description for overflow menu button [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_more">More options</string>
+
+    <!--&lt;!&ndash; Content description for incognito state [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_state_incognito">Incognito page</string>
+    <!--&lt;!&ndash; Content description for frozen state [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_state_frozen">Saved page</string>
+
+    <!--&lt;!&ndash; Content description for tab switcher transition [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_transition_navscreen">Tab management</string>
+    <!--&lt;!&ndash; Content description for navigating up in the bookmark folder hierarchy [CHAR LIMIT=NONE] &ndash;&gt;-->
+    <string name="accessibility_button_bookmarks_folder_up">Previous folder</string>
+    <string name="sendText">Choose an action for text</string>
+
+    <string name="cancelDel">Undo delete？</string>
+
+    <string name="str_bookmark_title_time">yyyy-MM</string>
+
+    <string name="write_advice_please">Please describe your opinion or suggestion in words... (1000 words)</string>
+    <string name="feed_back_sucess">We have received your comments and suggestions, thank you.</string>
+    <string name="check_network">Submission failed due to network issue, please check.</string>
+    <string name="commit_fail">Submission failed, Please try later</string>
+    <string name="please_input_over_six">Please enter 6 or more characters</string>
+    <string name="please_input_under_max">Please enter no more than %1$d characters</string>
+    <string name="email">Email:</string>
+    <string name="email_is_error">Please enter the correct Email format</string>
+    <string name="add_pic">Add image:</string>
+    <string name="optional">(Optional)</string>
+    <string name="please_leave_your_email">Please leave your email address</string>
+    <string name="feedback_other">Other:</string>
+    <string name="feedback_other_optional">Facebook/Twitter/Google+ (Optional)</string>
+    <string name="feedback_submit">submit</string>
+
+    <string name="versionUpdate">Update</string>
+    <string name="messageContent">There is a new version for %s, you can update it now.</string>
+    <string name="update_at_once">Update</string>
+
+    <!--AboutPreference-->
+    <string name="pref_check_update">Check Update</string>
+    <string name="pref_contact_us">Contact us:</string>
+    <string name="pref_version_summary"> %s</string>
+    <string name="pref_agreement">User Terms</string>
+    <string name="pref_agreement_url">http://tcl-icloudcdn.tclclouds.com/mig-portal/browser/en/quick_service.html</string>
+    <string name="pref_privacy_policy">Privacy Policy</string>
+    <string name="pref_privacy_policy_url">http://tcl-icloudcdn.tclclouds.com/mig-portal/browser/en/quick_privacy.html</string>
+    <string name="contact_google">https://plus.google.com/101637698177270497475</string>
+    <string name="contact_twitter">https://twitter.com/HiBrowserBest</string>
+    <string name="contact_facebook">https://www.facebook.com/HiBrowserOfficial/</string>
+    <string name="contact_instagram">https://www.instagram.com/hibrowserbest/</string>
+    <string name="browser_rights">Copyright © 2017 Blink Browser. \nAll Rights Reserved.</string>
+
+
+    <string name="check_for_update">check for update...</string>
+    <string name="request_fail">Request failed, please try later</string>
+    <string name="update_remind">Update notice</string>
+    <string name="is_latest">Already the latest version!</string>
+    <string name="no_prompt">Don\'t ask again</string>
+
+    <string name="download">Download</string>
+    <string name="downloading">Downloading</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="download_removed">Has removed</string>
+    <string name="download_pause">download pause</string>
+    <string name="download_failed">download failed</string>
+    <string name="unknown_file">unknown file types</string>
+    <string name="no_downloads">No Downloads</string>
+    <string name="downloadmanager_disabled">Download Manager is disabled. Please enable it.</string>
+    <string name="cannot_open_the_file">No procedure to open this type of file</string>
+    <string name="download_allow_mobile">Allow file download via mobile network?</string>
+    <string name="allow_download">Allow Download</string>
+    <string name="allow_download_no">Connecting to WIFI</string>
+    <string name="download_list">Download List</string>
+    <string name="storage_space_lack">Not enough storage available</string>
+    <string name="new_file">Create new file</string>
+    <string name="replace_file">Replace file</string>
+
+    <string name="default_location">Default location:%1$s</string>
+    <string name="select_location">Select location</string>
+    <string name="sdcard_free">%1$s Free/%2$s</string>
+    <!--&lt;!&ndash;bottomMenuItem&ndash;&gt;-->
+    <string name="menu_browser_add_bookmark">Add Bookmark</string>
+    <string name="menu_browser_night">Eyes Protector</string>
+    <string name="menu_browser_incognito">Incognito</string>
+    <string name="menu_browser_close_incognito">Normal</string>
+    <string name="menu_browser_history">History</string>
+    <string name="menu_browser_bookmarks">Bookmarks</string>
+    <string name="menu_browser_downloads">Downloads</string>
+    <string name="menu_browser_no_image">No Image</string>
+    <string name="menu_browser_full_screen">Full Screen</string>
+    <string name="menu_browser_font_size">Font Size</string>
+    <string name="menu_browser_search_page">Search in Page</string>
+    <string name="menu_browser_snapshots">Save Page</string>
+
+    <string name="menu_browser_settings">Settings</string>
+    <string name="menu_browser_quit">Quit</string>
+
+    <string name="title_clear_off_line">Clear saved pages?</string>
+    <string name="title_clear_history">Clear history?</string>
+    <string name="title_clear_all_history">Clear all history?</string>
+    <string name="title_clear_bookmark">Clear bookmark?</string>
+    <string name="enter_incognito_mode">Switch to incognito</string>
+    <string name="enter_normal_mode">Switch to normal</string>
+    <string name="swipe_up_tip">You can swipe up to delete the tab</string>
+    <string name="empty_info_most_visited">No record</string>
+
+    <string name="prompt_saved_off_line">Saved to offline pages</string>
+    <string name="prompt_already_saved_off">You have already saved this page</string>
+    <string name="prompt_already_saved_bookmark">You have already added this bookmark</string>
+    <string name="incognito_home">You\'re in Incognito</string>
+    <string name="incognito_home_content">Now you are in incognito mode.</string>
+    <string name="edit">Edit</string>
+
+    <string name="exit_dialog_title">Exit Browser?</string>
+    <string-array name="exit_dialog_choices">
+        <item>Clear history &amp; cache</item>
+        <item>Don\'t ask again</item>
+    </string-array>
+    <string-array name="exit_dialog_value">
+        <item>clear_history_cache_exiting</item>
+        <item>confirm_on_exit</item>
+    </string-array>
+
+    <string name="adblock_dialog_tips">Ads located, enable AD Block now?</string>
+    <string name="visit_url_title">Visit this URL from your clipboard?</string>
+    <string name="visit_url_ok">Visit</string>
+    <string name="incognito_home_tip">You can exit incognito and back to normal.</string>
+    <string name="snap_shot_no_title">Untitled</string>
+    <string name="view_select_all">Select All</string>
+    <string name="set_default_browser">Set default browser</string>
+    <string name="enter_settings_page">Enter Settings after clear is done, please.</string>
+    <string name="clear_default_setting_please">Another browser is set as default browser, please clear the browser\'s default setting.</string>
+    <string name="unknown_error">Unknown error, please try again.</string>
+    <string name="set_default_success">Setting up successful!</string>
+    <string name="set_default_failure">Set default failure. Try again please.</string>
+
+    <string name="default_bookmark">Default Bookmark</string>
+
+
+    <string name="click_again_quit">Tap back to quit</string>
+    <string name="clear_all_already">Clear all data already!</string>
+    <string name="select_download_path">Select the folder \"%s\" as the download location</string>
+
+    <string name="contact_us_on_facebook">Contact us on Facebook</string>
+    <string name="text_count_can_input">%1$d characters can be inputed</string>
+    <string name="input_over_flow">Submission failure for %1$d characters exceed the limit</string>
+    <string name="upload_image">Upload images</string>
+    <string name="request_read_external_storage_error">Request failure to access the phone memory</string>
+    <string name="get_photo_failure">Failure to obtain pictures</string>
+    <string name="image_count">%1$d/%2$d</string>
+
+    <string name="title_activity_add_link">Add link</string>
+    <string name="btn_recommend_add">Add</string>
+
+    <!-- right recommend -->
+    <string name="right_recommend_add_link_not_title">Please enter title</string>
+    <string name="right_recommend_add_link_not_url">Please enter URL</string>
+    <string name="right_recommend_add_link_url_format">This URL is wrong</string>
+    <string name="right_recommend_add_link_saved">Saved</string>
+    <string name="right_recommend_add_link_repeat">URL already exists</string>
+
+    <!-- right edit tools -->
+    <string name="right_recommend_tools_desktop">Desktop</string>
+    <string name="right_recommend_tools_remove">Remove</string>
+
+    <string name="file_name">File Name</string>
+    <string name="copylink_success">Link is copied</string>
+    <string name="add_to_homepage_success">Added to homepage</string>
+    <string name="add_to_desktop_success">Added to desktop</string>
+    <string name="clear_history_all">Clear history all</string>
+    <string name="remove_items_all">Remove items</string>
+    <string name="rename_failed">Rename Failed</string>
+    <string name="rename_success">Rename Success</string>
+    <string name="filename_empty">File name can\'t be empty</string>
+    <string name="file_exist">File is exist</string>
+    <string name="file_not_exist">File does not exist</string>
+
+    <!-- 只需要英文的即可，不需要翻译成其他的语言 -->
+    <string name="recommend_mark_default_icon">ic_browser_recommend_blank</string>
+    <string name="recommend_mark_add_icon">ic_browser_recommend_add</string>
+
+
+    <string name="menu_tools_box">Toolbox</string>
+    <string name="toolbox_menu_on">ON</string>
+    <string name="toolbox_menu_off">OFF</string>
+    <string name="home_page">Home Page</string>
+    <string name="desktop">Desktop</string>
+    <string name="name_cannot_empty">Web name can\'t be empty</string>
+
+    <string name="setting_update_speech_recognition">voice input forbidden, please update Google voice service</string>
+    <string name="done">DONE</string>
+    <string name="edited">EDITED</string>
+    <string name="enter_website_name">Enter website name</string>
+
+    <string name="download_size_text_format" formatted="false">%s/%s</string>
+    <string name="unknown">unknown</string>
+    <string name="available">Available</string>
+    <string name="total">Total</string>
+    <string name="notification_content_text">Click to view</string>
+    <string name="notification_download_finish">Download completed</string>
+    <string name="view">View</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="ua_switcher_desktop">Request desktop site</string>
+
+    <string name="video_mobile_permission">You are using the mobile network. Still want to play?</string>
+    <string name="video_mobile_play">Play</string>
+    <string name="video_mobile_pause">Cancel</string>
+    <string name="close_all_incognito_notification">Close all incognito tabs</string>
+    <string name="add_up_to_15">Add up to 15</string>
+    <string name="pref_deverloper_options">Deverloper options</string>
+    <string name="show_dev_on">You are now a developer!</string>
+
+    <string name="pic_ad_block_count">Blocked Images</string>
+    <string name="ad_block_num">%d</string>
+    <string name="js_ad_block_count">Blocked JavaScript files</string>
+    <string name="popup_ad_block_count">Blocked Popups</string>
+    <string name="subscribe_adblock_rule">Subscribe AdBlock\'s Filters</string>
+    <string name="subscribe_adblock_rule_title">AdBlock\'s Filters</string>
+    <string name="subscribe_adblock_desc">AdBlock\'s Filters</string>
+    <string name="subscribe_easylist_desc">EasyList</string>
+    <string name="subscribe_update_open">%s Updated</string>
+    <string name="subscribe_update_close">Canceled subscription</string>
+    <string name="subscribe_updating">Updating...</string>
+    <string name="subscribe_adblock_update_now">AdBlock is automatically updated; you can also update it now</string>
+    <string name="custom_rules">Custom AdBlock\'s filters</string>
+    <string name="custom_rules_title">AdBlock\'s filters</string>
+    <string name="confirm_deletion">Delete this?</string>
+    <string name="add">Add</string>
+    <string name="confirm_deletion_all">Delete all?</string>
+    <string name="js_disable_hosts">Disable JavaScript to certain domains</string>
+    <string name="js_disable_hosts_title">Certain domains</string>
+    <string name="null_rules_prompt">You can add your own rules. Your rules must follow the grammar rules of Adblock Plus.</string>
+    <string name="adblockplus_url">https://adblockplus.org/en/filters</string>
+    <string name="example_adblock_rule">example.com##div.textad</string>
+    <string name="example_host">example.com</string>
+    <string name="adblock_rules_error_prompt">Syntax error, please edit again!</string>
+    <string name="js_disable_host_error_prompt">Domain error, please edit again!</string>
+
+    <string name="leadpage_home">Home</string>
+    <string name="leadpage_back">Back</string>
+    <string name="leadpage_forward">Forward</string>
+    <string name="translate_undo">UNDO</string>
+    <string name="translate_snakebar_notice_message">Translating to %s</string>
+    <string name="translate_snakebar_notice_message_finish">Translation finish</string>
+    <string name="translate_select_language_descript">Select translation language</string>
+    <string name="webview_translation">Translate</string>
+    <string name="abnormal_recover_ok">Recovery</string>
+    <string name="abnormal_recover_message">Found that pages were not closed, whether to restore?</string>
+    <string name="abnormal_recover_recovered">Pages that were last accessed have been restored.</string>
+    <string name="mark_image_ad">Mark Ad</string>
+    <string name="mark_image_ad_fail">Marked fail</string>
+    <string name="static_webpage">Static Webpage</string>
+    <string name="null_domain_prompt">No static websites, Click to Add</string>
+    <string name="blink_desc">Blink is based on open source projects: AOSP Browser and Chromium,\n and committed to providing users with the ultimate browsing experience.</string>
+    <string name="pref_lock_toolbar">Pin Toolbar</string>
+</resources>

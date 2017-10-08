@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blink.browser.view.ToolbarCenterView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/safe_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/browser_url_default_safe_icon"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/web_view_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/indicator_text_select"
+                android:textSize="@dimen/title_bar_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.blink.browser.view.ToolbarCenterView>

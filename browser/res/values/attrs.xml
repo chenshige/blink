@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default style for seekbar preferences. -->
+    <attr name="yesNoPreferenceStyle" format="reference" />
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="browserThumbDrawable" format="reference"/>
+        <attr name="browserThumbColor" format="color|reference"/>
+        <attr name="browserThumbMargin" format="dimension|reference"/>
+        <attr name="browserThumbMarginTop" format="dimension|reference"/>
+        <attr name="browserThumbMarginBottom" format="dimension|reference"/>
+        <attr name="browserThumbMarginLeft" format="dimension|reference"/>
+        <attr name="browserThumbMarginRight" format="dimension|reference"/>
+        <attr name="browserThumbWidth" format="dimension|reference"/>
+        <attr name="browserThumbHeight" format="dimension|reference"/>
+        <attr name="browserThumbRadius" format="dimension|reference"/>
+        <attr name="browserBackRadius" format="dimension|reference"/>
+        <attr name="browserBackDrawable" format="reference"/>
+        <attr name="browserBackColor" format="color|reference"/>
+        <attr name="browserFadeBack" format="boolean"/>
+        <attr name="browserBackMeasureRatio" format="float"/>
+        <attr name="browserAnimationDuration" format="integer"/>
+        <attr name="browserTintColor" format="color|reference"/>
+        <attr name="browserTextOn" format="string"/>
+        <attr name="browserTextOff" format="string"/>
+        <attr name="browserTextMarginH" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsSelectTextColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsIndicatorOffset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeToLoadLayout">
+        <attr name="refresh_enabled" format="boolean" />
+        <attr name="load_more_enabled" format="boolean" />
+
+        <attr name="swipe_style" format="enum">
+            <enum name="classic" value="0" />
+            <enum name="above" value="1" />
+            <enum name="blew" value="2" />
+            <enum name="scale" value="3" />
+        </attr>
+
+        <attr name="drag_ratio" format="float" />
+
+        <attr name="refresh_trigger_offset" format="dimension" />
+        <attr name="load_more_trigger_offset" format="dimension" />
+        <attr name="refresh_final_drag_offset" format="dimension" />
+        <attr name="load_more_final_drag_offset" format="dimension" />
+
+        <attr name="swiping_to_refresh_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="refresh_complete_delay_duration" format="integer" />
+        <attr name="refresh_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="swiping_to_load_more_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="load_more_complete_delay_duration" format="integer" />
+        <attr name="load_more_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_loading_more_scrolling_duration" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+</resources>

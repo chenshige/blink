@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="287dp"
+    android:layoutDirection="ltr"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/label_image"
+        android:layout_width="174dp"
+        android:layout_height="159dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_browser_setting_default_browser">
+
+        <ImageView
+            android:id="@+id/image_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/ic_launcher_browser" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="54dp"
+            android:layout_toEndOf="@+id/image_launcher"
+            android:layout_toRightOf="@+id/image_launcher"
+            android:maxLines="1"
+            android:maxWidth="76dp"
+            android:text="@string/application_name"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="191dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/default_browser_label_line_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/default_browser_label_text_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="191dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="162dp"
+        android:background="@color/default_browser_label_line_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/default_browser_label_text_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/to_set_default_browser"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/settings_list_divider" />
+
+    <TextView
+        android:id="@+id/to_set_default_browser"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/menu_preferences"
+        android:textAllCaps="true"
+        android:textColor="@color/add_book_mark_save"
+        android:textSize="14sp" />
+</RelativeLayout>

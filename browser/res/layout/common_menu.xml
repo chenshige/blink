@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blink.browser.menu.CommonMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_menu_id"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <View
+        android:id="@+id/common_menu_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_menu_shadow_bg" />
+
+    <LinearLayout
+        android:id="@+id/common_menu_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/toolbar_commonmenu_padding"
+        android:layout_marginLeft="@dimen/toolbar_commonmenu_padding"
+        android:layout_marginRight="@dimen/toolbar_commonmenu_padding"
+        android:layout_marginStart="@dimen/toolbar_commonmenu_padding"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/first_menu_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_menu_corner_shape">
+
+                <TextView
+                    android:id="@+id/toast_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/toolbar_common_toast_view_margin_top"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <com.blink.browser.menu.CommonMenuLinearLayout
+                    android:id="@+id/menu_column1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toast_text_view"
+                    android:layout_marginBottom="@dimen/toolbar_commonmenu_line_padding"
+                    android:layout_marginEnd="@dimen/toolbar_commonmenu_circle_view_padding"
+                    android:layout_marginLeft="@dimen/toolbar_commonmenu_circle_view_padding"
+                    android:layout_marginRight="@dimen/toolbar_commonmenu_circle_view_padding"
+                    android:layout_marginStart="@dimen/toolbar_commonmenu_circle_view_padding"
+                    android:layout_marginTop="@dimen/toolbar_common_first_line_margin_top"
+                    android:orientation="horizontal">
+
+                    <com.blink.browser.menu.CommonMenuCircleImageView
+                        android:id="@+id/incognito_common_menu_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_common_circle_image_height"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_browser_menu_incognito_off" />
+
+                    <com.blink.browser.menu.CommonMenuCircleImageView
+                        android:id="@+id/eye_protect_toolbar_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_common_circle_image_height"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_browser_menu_eyes_protector_off" />
+
+                    <com.blink.browser.menu.CommonMenuCircleImageView
+                        android:id="@+id/noImage_common_menu_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_common_circle_image_height"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_browser_menu_no_image_off" />
+
+                    <com.blink.browser.menu.CommonMenuCircleImageView
+                        android:id="@+id/status_bar_toolbar_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_common_circle_image_height"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_browser_menu_show_status_bar" />
+                </com.blink.browser.menu.CommonMenuLinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_below="@id/menu_column1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="#19000000" />
+
+                <LinearLayout
+                    android:id="@+id/tools_menu_column2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/new_bookmark_button_id"
+                            android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                            android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/browser_common_menu_item_bg"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/toolbar_common_button_padding_bottom"
+                            android:paddingTop="@dimen/toolbar_common_button_margin_top">
+
+                            <ImageView
+                                android:id="@+id/new_bookmark_common_menu_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_browser_menu_add_bookmark" />
+
+                            <TextView
+                                android:id="@+id/new_bookmark_common_menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="@string/add_new_bookmark"
+                                android:textColor="@color/bottom_menu_text_color"
+                                android:textSize="@dimen/bottom_menu_item_text_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/bookmarks_history_button_id"
+                            android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                            android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/browser_common_menu_item_bg"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/toolbar_common_button_padding_bottom"
+                            android:paddingTop="@dimen/toolbar_common_button_margin_top" >
+
+
+                            <ImageView
+                                android:id="@+id/bookmarks_history_common_menu_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_browser_menu_bookmark_history" />
+
+                            <TextView
+                                android:id="@+id/bookmarks_history_common_menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="@string/menu_browser_bookmarks"
+                                android:textColor="@color/bottom_menu_text_color"
+                                android:textSize="@dimen/bottom_menu_item_text_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/download_button_id"
+                            android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                            android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/browser_common_menu_item_bg"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/toolbar_common_button_padding_bottom"
+                            android:paddingTop="@dimen/toolbar_common_button_margin_top">
+
+
+                            <ImageView
+                                android:id="@+id/download_common_menu_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_browser_menu_download" />
+
+                            <TextView
+                                android:id="@+id/download_common_menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="@string/menu_browser_downloads"
+                                android:textColor="@color/bottom_menu_text_color"
+                                android:textSize="@dimen/bottom_menu_item_text_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/refresh_button_id"
+                            android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                            android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/browser_common_menu_item_bg"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/toolbar_common_button_padding_bottom"
+                            android:paddingTop="@dimen/toolbar_common_button_margin_top">
+
+                            <ImageView
+                                android:id="@+id/refresh_toolbar_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/browser_refresh_bg" />
+
+                            <TextView
+                                android:id="@+id/refresh_common_menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="@string/refresh"
+                                android:textColor="@color/bottom_menu_text_color"
+                                android:textSize="@dimen/bottom_menu_item_text_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/menu_toolbox"
+                layout="@layout/layout_menu_tool_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/first_menu_parent"
+                android:layout_alignTop="@id/first_menu_parent"
+                android:background="@drawable/common_menu_corner_shape"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tools_menu_column3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_menu_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/tools_box_button_id"
+                    android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                    android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/browser_common_menu_item_bg"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/toolbar_toolbox_padding_bottom"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/toolbar_toolbox_padding_bottom">
+
+                    <ImageView
+                        android:id="@+id/toolbox_common_menu_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_browser_menu_tools" />
+
+                    <TextView
+                        android:id="@+id/toolbox_common_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/menu_tools_box"
+                        android:textColor="@color/bottom_menu_text_color"
+                        android:textSize="@dimen/bottom_menu_item_text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/share_button_id"
+                    android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                    android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/browser_common_menu_item_bg"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/toolbar_toolbox_padding_bottom"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/toolbar_toolbox_padding_bottom">
+
+                    <ImageView
+                        android:id="@+id/share_common_menu_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/browser_share_bg" />
+                    <TextView
+                        android:id="@+id/share_common_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/share"
+                        android:textColor="@color/bottom_menu_text_color"
+                        android:textSize="@dimen/bottom_menu_item_text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/setting_button_id"
+                    android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                    android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                    android:background="@drawable/browser_common_menu_item_bg"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/toolbar_toolbox_padding_bottom"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/toolbar_toolbox_padding_bottom">
+
+                    <ImageView
+                        android:id="@+id/setting_common_menu_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_browser_menu_setting" />
+                    <TextView
+                        android:id="@+id/setting_common_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/menu_browser_settings"
+                        android:textColor="@color/bottom_menu_text_color"
+                        android:textSize="@dimen/bottom_menu_item_text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/exit_button_id"
+                    android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                    android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/browser_common_menu_item_bg"
+                    android:orientation="horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/toolbar_toolbox_padding_bottom"
+                    android:paddingTop="@dimen/toolbar_toolbox_padding_bottom"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/exit_common_menu_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_browser_menu_exit" />
+
+                    <TextView
+                        android:id="@+id/exit_common_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/menu_browser_quit"
+                        android:textColor="@color/bottom_menu_text_color"
+                        android:textSize="@dimen/bottom_menu_item_text_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.blink.browser.menu.CommonMenu>

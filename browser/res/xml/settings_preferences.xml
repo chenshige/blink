@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="search_engine"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_content_search_engine"
+        android:widgetLayout="@layout/preference_arrow_item" />
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="text_size"
+        android:layout="@layout/browser_summary_preference"
+        android:summary="@string/pref_font_size_summary"
+        android:title="@string/pref_font_size" />
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="privacy_security"
+        android:layout="@layout/browser_summary_preference"
+        android:summary="@string/pref_privacy_security_title_summary"
+        android:title="@string/pref_privacy_security_title" />
+
+    <PreferenceScreen
+        android:key="privacy_clear_data"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_privacy_clear_data"
+        android:widgetLayout="@layout/preference_arrow_item" />
+
+
+    <PreferenceScreen
+        android:key="ad_block"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_ad_block"
+        android:widgetLayout="@layout/preference_arrow_item" />
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="download"
+        android:layout="@layout/browser_summary_preference"
+        android:title="@string/pref_download" />
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="user_agent"
+        android:layout="@layout/browser_preference"
+        android:title="@string/accessibility_button_uaswitch"
+        android:widgetLayout="@layout/preference_text_item"/>
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="default_text_encoding"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_default_text_encoding"
+        android:widgetLayout="@layout/preference_text_item"/>
+
+    <PreferenceCategory android:layout="@layout/setting_hight_divider" />
+
+    <!--
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:defaultValue="false"
+        android:key="show_status_bar"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_show_status_bar" />
+    -->
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:defaultValue="false"
+        android:key="lock_toolbar"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_lock_toolbar" />
+
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:key="notification_tool_show"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_notification_tool_show" />
+
+    <!--
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:defaultValue="false"
+        android:key="default_browser"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_default_browser" />
+    -->
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:defaultValue="true"
+        android:key="confirm_on_exit"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_confirm_on_exit" />
+
+    <com.blink.browser.preferences.BrowserSwitchPreference
+        android:defaultValue="false"
+        android:key="force_userscalable"
+        android:layout="@layout/browser_preference"
+        android:summary="@string/pref_force_userscalable_summary"
+        android:title="@string/pref_force_userscalable" />
+
+    <PreferenceCategory android:layout="@layout/setting_hight_divider" />
+
+    <!--<com.blink.browser.preferences.BrowserPreference-->
+        <!--android:key="advanced"-->
+        <!--android:layout="@layout/browser_preference"-->
+        <!--android:title="@string/pref_extras_title" />-->
+
+    <!--<PreferenceCategory android:layout="@layout/setting_hight_divider" />-->
+
+    <PreferenceScreen
+        android:key="deverloper_options"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_deverloper_options" />
+
+    <!--    <PreferenceScreen
+        android:key="app_score"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_app_score" />
+
+    <PreferenceScreen
+        android:key="feedback"
+        android:layout="@layout/browser_preference"
+        android:persistent="false"
+        android:title="@string/pref_feedback" /> -->
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="default_browser"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_default_browser" />
+
+    <com.blink.browser.preferences.BrowserPreference
+        android:key="app_name"
+        android:layout="@layout/browser_preference"
+        android:title="@string/pref_about" />
+
+    <PreferenceCategory android:layout="@layout/setting_hight_divider" />
+
+    <com.blink.browser.preferences.BrowserDialogPreference
+        android:dialogMessage="@string/pref_extras_reset_default_dlg"
+        android:key="reset_default_preferences"
+        android:layout="@layout/reset_default_preference"
+        android:negativeButtonText="@string/cancel"
+        android:positiveButtonText="@string/ok"
+        android:title="@string/pref_extras_reset_default" />
+
+    <PreferenceCategory android:layout="@layout/setting_hight_divider" />
+
+</PreferenceScreen>

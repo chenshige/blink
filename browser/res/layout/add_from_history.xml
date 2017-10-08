@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snap_item_backgroud">
+
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:childDivider="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:dividerHeight="1dp"
+        android:scrollingCache="false"
+        android:overScrollMode="never"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/empty_history_icon_height"
+            android:layout_height="@dimen/empty_history_icon_height"
+            android:src="@drawable/ic_browser_nohistory" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/empty_txt_top"
+            android:text="@string/empty_history"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/flow_layout_abord_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

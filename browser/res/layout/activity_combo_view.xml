@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:layoutDirection="ltr"
+              android:orientation="vertical">
+
+    <com.blink.browser.widget.PagerSlidingTabStrip
+        android:id="@+id/tab_page_indicator_combo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/browser_TabPageIndicator_height"
+        android:background="@color/settings_title_background"
+        app:pstsIndicatorColor="@color/sliding_tab_indicator_color"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="40dp"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/tab_under_line_color"
+        app:pstsUnderlineHeight="1dp"
+        app:pstsIndicatorOffset="40dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_combo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

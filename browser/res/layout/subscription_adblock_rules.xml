@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/adblockplus_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingStart="@dimen/dialog_horizontal_padding"
+        android:paddingEnd="@dimen/dialog_horizontal_padding">
+
+        <ImageView
+            android:id="@+id/adblock_rule_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/browser_check_box"/>
+
+        <TextView
+            android:id="@+id/adblock_rule_desc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_list_item_height"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/adblock_rule_check_box"
+            android:textColor="@color/settings_item_title_normal_color"
+            android:textSize="@dimen/settings_list_item_title_size"
+            android:layout_toRightOf="@id/adblock_rule_check_box"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:text="@string/subscribe_adblock_desc"/>
+
+        <TextView
+            android:id="@+id/adblock_rule_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adblock_rule_check_box"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/settings_list_item_summary_size"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/settings_background" />
+
+    <RelativeLayout
+        android:id="@+id/easylist_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingStart="@dimen/dialog_horizontal_padding"
+        android:paddingEnd="@dimen/dialog_horizontal_padding">
+
+        <ImageView
+            android:id="@+id/easylist_rule_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/browser_check_box"/>
+
+        <TextView
+            android:id="@+id/easylist_rule_desc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_list_item_height"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/easylist_rule_check_box"
+            android:textColor="@color/settings_item_title_normal_color"
+            android:textSize="@dimen/settings_list_item_title_size"
+            android:layout_toRightOf="@id/easylist_rule_check_box"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:text="@string/subscribe_easylist_desc"/>
+
+        <TextView
+            android:id="@+id/easylist_rule_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/easylist_rule_check_box"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/settings_list_item_summary_size"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/settings_background" />
+
+    <RelativeLayout
+        android:id="@+id/adblock_update_now"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageView
+            android:id="@+id/adblock_update_now_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_browser_adblock_update"/>
+
+        <TextView
+            android:id="@+id/adblock_update_now_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_list_item_height"
+            android:gravity="center_vertical"
+            android:textColor="@color/settings_item_title_normal_color"
+            android:textSize="@dimen/settings_list_item_title_size"
+            android:layout_alignParentLeft="true"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:layout_toStartOf="@id/adblock_update_now_btn"
+            android:layout_toLeftOf="@id/adblock_update_now_btn"
+            android:text="@string/subscribe_adblock_update_now"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:background="@color/settings_background" />
+
+
+</LinearLayout>

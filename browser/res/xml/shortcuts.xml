@@ -1,0 +1,23 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="new-tab-shortcut"
+        android:icon="@drawable/ic_browser_launcher_new"
+        android:shortcutShortLabel="@string/new_tab" >
+        <intent
+            android:action="blink.shortcut.action.OPEN_NEW_TAB"
+            android:targetPackage="com.blink.browser"
+            android:targetClass="com.blink.browser.BrowserActivity" >
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="new-incognito-tab-shortcut"
+        android:icon="@drawable/ic_browser_launcher_incognito"
+        android:shortcutShortLabel="@string/new_incognito_tab">
+        <intent
+            android:action="blink.shortcut.action.OPEN_NEW_INCOGNITO_TAB"
+            android:targetPackage="com.blink.browser"
+            android:targetClass="com.blink.browser.BrowserActivity" >
+        </intent>
+    </shortcut>
+</shortcuts>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <Button
+        android:id="@+id/clear_all_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:text="@string/clear_all"
+        android:textColor="@color/selector_data_clear_btn"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingEnd="@dimen/dialog_horizontal_padding"
+        android:paddingLeft="@dimen/dialog_horizontal_padding"
+        android:paddingRight="@dimen/dialog_horizontal_padding"
+        android:paddingStart="@dimen/dialog_horizontal_padding"
+        android:paddingTop="21dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toRightOf="@id/icon"
+            android:textColor="@color/dialog_title_text_color"
+            android:textSize="@dimen/dialog_title_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dialog_content_padding_bottom"
+            android:paddingEnd="@dimen/dialog_horizontal_padding"
+            android:paddingLeft="@dimen/dialog_horizontal_padding"
+            android:paddingRight="@dimen/dialog_horizontal_padding"
+            android:paddingStart="@dimen/dialog_horizontal_padding"
+            android:paddingTop="@dimen/dialog_content_padding_top"
+            android:textColor="@color/dialog_content_text_color"
+            android:textSize="@dimen/dialog_item_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/negative_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialog_bottom_layout_height"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/dialog_button_horizontal_padding"
+        android:layout_marginRight="@dimen/dialog_button_horizontal_padding"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingEnd="@dimen/dialog_button_horizontal_padding"
+            android:paddingLeft="@dimen/dialog_button_horizontal_padding"
+            android:paddingRight="@dimen/dialog_button_horizontal_padding"
+            android:paddingStart="@dimen/dialog_button_horizontal_padding"
+            android:textAllCaps="true"
+            android:textColor="@color/browser_dialog_button"
+            android:textSize="@dimen/dialog_button_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingEnd="@dimen/dialog_button_horizontal_padding"
+            android:paddingLeft="@dimen/dialog_button_horizontal_padding"
+            android:paddingRight="@dimen/dialog_button_horizontal_padding"
+            android:paddingStart="@dimen/dialog_button_horizontal_padding"
+            android:textAllCaps="true"
+            android:textColor="@color/browser_dialog_button"
+            android:textSize="@dimen/dialog_button_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingEnd="@dimen/dialog_button_horizontal_padding"
+            android:paddingLeft="@dimen/dialog_button_horizontal_padding"
+            android:paddingRight="@dimen/dialog_button_horizontal_padding"
+            android:paddingStart="@dimen/dialog_button_horizontal_padding"
+            android:textAllCaps="true"
+            android:textColor="@color/browser_dialog_button"
+            android:textSize="@dimen/dialog_button_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

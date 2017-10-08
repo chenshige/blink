@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2011, The Android Open Source Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<com.blink.browser.SnapshotBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@color/actionbar_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_search_category_history"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:paddingStart="8dip"
+        android:paddingLeft="8dip" />
+    <ImageView
+        android:id="@+id/favicon"
+        android:layout_width="52dip"
+        android:layout_height="match_parent"
+        android:paddingStart="16dip"
+        android:paddingRight="16dip"
+        android:paddingEnd="16dip"
+        android:paddingLeft="16dip"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+    <FrameLayout
+        android:id="@+id/toggle_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/tabcount_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="52dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_browser_home_rectangle" />
+        <TextView
+            android:id="@+id/tab_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="1"
+            style="@style/HoloButton" />
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        style="@style/HoloButton"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/accessibility_button_more"
+        android:src="@drawable/ic_browser_home_more"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.blink.browser.SnapshotBar>

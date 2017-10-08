@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/searchengine_item_bg">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="@dimen/select_searchengine_item_image_wh"
+            android:layout_height="@dimen/select_searchengine_item_image_wh"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/select_searchengine_item_image_margin" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/toast_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/toast_margin_top"
+        android:layout_marginEnd="@dimen/toast_margin_start"
+        android:layout_marginStart="@dimen/toast_margin_start"
+        android:layout_marginLeft="@dimen/toast_margin_start"
+        android:layout_marginRight="@dimen/toast_margin_start"
+        android:layout_marginTop="@dimen/toast_margin_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/toast_message_size"
+        android:layout_weight="1" />
+
+</LinearLayout>

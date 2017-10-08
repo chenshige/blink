@@ -1,0 +1,325 @@
+<!--
+/*
+ * Copyright 2006, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blink.browser">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="Browser"
+        android:backupAgent=".BrowserBackupAgent"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_browser"
+        android:label="@string/application_name"
+        android:supportsRtl="true"
+        android:taskAffinity="${PACKAGE_NAME}">
+
+        <provider
+            android:name=".provider.BrowserProvider2"
+            android:authorities="${PACKAGE_NAME};${BROWSER_NAME}"
+            android:exported="true"
+            android:multiprocess="false"
+            android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS"
+            android:writePermission="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS">
+            <path-permission
+                android:path="/bookmarks/search_suggest_query"
+                android:readPermission="android.permission.GLOBAL_SEARCH" />
+        </provider>
+
+        <activity
+            android:name=".StartPageActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/application_name"
+            android:screenOrientation="user"
+            android:theme="@style/BrowserTheme">
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- For these schemes were not particular MIME type has been
+                 supplied, we are a good candidate. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <!--  For these schemes where any of these particular MIME types
+                  have been supplied, we are a good candidate. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+            <!-- For viewing saved web archives. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/x-webarchive-xml" />
+            </intent-filter>
+            <!-- We are also the main entry point of the browser. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+            </intent-filter>
+            <!-- The maps app is a much better experience, so it's not
+                 worth having this at all... especially for a demo!
+            <intent-filter android:label="Map In Browser">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address" />
+            </intent-filter>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="BrowserActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout"
+            android:label="@string/application_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="user"
+            android:theme="@style/BrowserTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+            android:name="ShortcutActivity"
+            android:icon="@mipmap/ic_launcher_shortcut_browser_bookmark"
+            android:label="@string/shortcut_bookmark"
+            android:screenOrientation="user"
+            android:theme="@style/ShortcutTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".preferences.BrowserPreferencesPage"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/menu_preferences"
+            android:screenOrientation="user"
+            android:launchMode="singleTop"
+            android:theme="@style/SettingsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="BookmarkSearch"
+            android:excludeFromRecents="true"
+            android:label="@string/bookmarks_search"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/bookmarks_searchable" />
+        </activity>
+
+        <activity
+            android:name="AddBookmarkPage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/bookmarks_add_page"
+            android:screenOrientation="user"
+            android:theme="@style/SettingsTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/bookmark" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".download.DownloadRenamePage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/bookmarks_add_page"
+            android:screenOrientation="user"
+            android:theme="@style/SettingsTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan"></activity>
+
+        <activity
+            android:name="ComboViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:theme="@style/SettingsTheme" />
+
+        <activity
+            android:name="UrlSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:theme="@style/UrlSearchTheme"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+
+        <activity
+            android:name=".download.DownloadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:theme="@style/SettingsTheme"></activity>
+
+        <activity
+            android:name=".SnapshotActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:theme="@style/SettingsTheme"></activity>
+
+        <!-- Bookmark thumbnail homescreen widget -->
+        <receiver
+            android:name=".widget.BookmarkThumbnailWidgetProvider"
+            android:label="@string/bookmarks">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.android.browser.BOOKMARK_APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bookmarkthumbnailwidget_info" />
+        </receiver>
+        <service
+            android:name=".widget.BookmarkThumbnailWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <receiver
+            android:name=".widget.BookmarkWidgetProxy"
+            android:exported="false" />
+        <activity
+            android:name=".widget.BookmarkWidgetConfigure"
+            android:screenOrientation="user"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Makes .BrowserActivity the search target for any activity in Browser -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".BrowserActivity" />
+
+        <receiver android:name=".OpenDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- For custom home pages (like most visited) -->
+        <provider
+            android:name=".homepages.HomeProvider"
+            android:authorities="${PACKAGE_NAME}.home"
+            android:exported="false"
+            android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+        <receiver
+            android:name="com.blink.browser.BrowserReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${PACKAGE_NAME}.action.checkconfiguration" />
+                <action android:name="${PACKAGE_NAME}.action.checkaction" />
+                <action android:name="${PACKAGE_NAME}.action.hoturl" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="${PACKAGE_NAME}.action.download.view" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".provider.SnapshotProvider"
+            android:authorities="${PACKAGE_NAME}.snapshots"
+            android:exported="true" />
+        <service android:name=".widget.IncognitoNotificationService"
+            android:exported="false"/>
+    </application>
+</manifest>
+

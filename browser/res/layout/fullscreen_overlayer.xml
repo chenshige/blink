@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/video_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/video_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_browser_toolbar_back"/>
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="236dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignBaseline="@id/video_back"/>
+
+        <TextView
+            android:id="@+id/video_sys_time"
+            android:layout_width="36dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/video_sys_time"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/video_battery_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_browser_video_battery"/>
+
+            <com.blink.browser.view.BatteryView
+                android:id="@+id/video_battery"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/video_battery_layout"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/signal_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_browser_video_signal"/>
+
+            <com.blink.browser.view.MobileSignalView
+                android:id="@+id/video_mobile_signal"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/signal_layout"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/wifi_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_browser_video_wifi"/>
+
+            <com.blink.browser.view.WifiView
+                android:id="@+id/video_wifi"
+                android:layout_width="18dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/video_share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="127dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_browser_menu_share_incognito"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/video_play_button"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/video_play_background"
+        android:src="@drawable/ic_browser_video_big_play"
+        android:foregroundGravity="center"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/video_lock_background"
+        android:id="@+id/video_lock_layout">
+        <ImageButton
+            android:id="@+id/video_controller_lock"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_browser_video_unlocked"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_quick_controller"
+        android:layout_width="160dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/video_controller_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/video_volume"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_browser_video_voice"/>
+
+        <ImageView
+            android:id="@+id/video_brightness"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_browser_video_brightness"/>
+
+        <ProgressBar
+            android:id="@+id/common_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:max="100"
+            android:progressDrawable="@drawable/video_progressbar"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_play_controller"
+        android:layout_width="160dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/video_controller_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/video_fast_forward"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_browser_video_forward"/>
+
+        <ImageView
+            android:id="@+id/video_rewind"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_browser_video_back"/>
+
+        <TextView
+            android:id="@+id/seek_time"
+            android:layout_width="132dp"
+            android:layout_height="19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/volume_bar"
+        android:maxWidth="208dp"
+        android:maxHeight="2dp"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-68dp"
+        android:layout_centerVertical="true"
+        android:max="100"
+        android:thumbOffset="0dp"
+        android:rotation="-90"
+        android:progressDrawable="@drawable/video_progress_bar_vertical"
+        android:thumb="@drawable/round_button" />
+
+    <include
+        android:id="@+id/media_controls"
+        layout="@layout/media_controls"
+        android:layout_height="52dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

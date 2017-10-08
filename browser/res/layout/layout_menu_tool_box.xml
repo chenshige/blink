@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blink.browser.menu.MenuToolBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tools_box_menu_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="@dimen/toolbar_commonmenu_padding"
+    android:layout_marginLeft="@dimen/toolbar_commonmenu_padding"
+    android:layout_marginRight="@dimen/toolbar_commonmenu_padding"
+    android:layout_marginStart="@dimen/toolbar_commonmenu_padding"
+    android:background="@drawable/common_menu_corner_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tools_box_menu_column1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/toolbar_menu_box_margin_left"
+        android:paddingRight="@dimen/toolbar_menu_box_margin_left">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/save_button_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/save_common_menu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_save_bg" />
+
+                <TextView
+                    android:id="@+id/save_common_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/menu_browser_snapshots"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/snapshot_button_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/snapshot_common_menu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_saved_page_bg" />
+
+                <TextView
+                    android:id="@+id/snapshot_common_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/tab_snapshots"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/font_size_button_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/font_size_common_menu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_fontsize_bg" />
+
+                <TextView
+                    android:id="@+id/font_size_common_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/menu_browser_font_size"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/search_button_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/search_common_menu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_searchpage_bg" />
+
+                <TextView
+                    android:id="@+id/search_common_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/menu_browser_search_page"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tools_box_menu_column2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tools_box_menu_column1"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="@dimen/toolbar_menu_box_margin_left"
+        android:paddingRight="@dimen/toolbar_menu_box_margin_left">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/user_agent_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/user_agent_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_user_agent_bg" />
+
+                <TextView
+                    android:id="@+id/user_agent_menu_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/ua_switcher_desktop"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/webview_translation_id"
+                android:layout_width="@dimen/toolbar_menu_click_bg_width"
+                android:layout_height="@dimen/toolbar_menu_click_bg_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/browser_common_menu_item_bg"
+                android:orientation="horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+                android:paddingRight="@dimen/toolbar_item_click_bg_padding"
+                android:paddingTop="@dimen/toolbar_item_click_bg_top_padding">
+
+                <ImageView
+                    android:id="@+id/webview_translation_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/browser_translate_bg" />
+
+                <TextView
+                    android:id="@+id/webview_translation_menu_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/toolbar_menu_box_text_margin"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/webview_translation"
+                    android:textColor="@color/bottom_menu_text_color"
+                    android:textSize="@dimen/bottom_menu_item_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/toolbar_item_click_bg_padding"
+            android:paddingRight="@dimen/toolbar_item_click_bg_padding" />
+
+    </LinearLayout>
+
+</com.blink.browser.menu.MenuToolBox>

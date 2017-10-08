@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/progress_text_size_seekbar_thumb_stroke_p" />
+                    <size android:width="@dimen/progress_text_size_seekbar_thumb_wh" android:height="@dimen/progress_text_size_seekbar_thumb_wh" />
+                </shape>
+            </item>
+
+            <item android:bottom="@dimen/progress_text_size_seekbar_thumb_padding" android:left="@dimen/progress_text_size_seekbar_thumb_padding" android:right="@dimen/progress_text_size_seekbar_thumb_padding" android:top="@dimen/progress_text_size_seekbar_thumb_padding">
+                <shape android:shape="oval">
+                    <solid android:color="@color/progress_text_size_seekbar_thumb_stroke_n" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/progress_text_size_seekbar_thumb_background" />
+                    <size android:width="@dimen/progress_text_size_seekbar_thumb_wh" android:height="@dimen/progress_text_size_seekbar_thumb_wh" />
+                </shape>
+            </item>
+
+            <item android:bottom="@dimen/progress_text_size_seekbar_thumb_padding" android:left="@dimen/progress_text_size_seekbar_thumb_padding" android:right="@dimen/progress_text_size_seekbar_thumb_padding" android:top="@dimen/progress_text_size_seekbar_thumb_padding">
+                <shape android:shape="oval">
+                    <solid android:color="@color/progress_text_size_seekbar_thumb_stroke_n" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+</selector>

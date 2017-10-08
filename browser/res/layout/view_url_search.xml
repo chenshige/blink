@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/url_search_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/linear_view_shape" />
+
+        <RelativeLayout
+            android:id="@+id/view_url_search_container"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+            <RelativeLayout
+                android:id="@+id/url_search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp">
+
+                <EditText
+                    android:id="@+id/et_view_url_search"
+                    style="@style/BrowserEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/search_hint"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textNoSuggestions|textWebEditText"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="45dp"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="45dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_view_url_txt_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_browser_clear" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/back_home_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:padding="12dp" />
+
+            <ImageView
+                android:id="@+id/perform_search_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/search_hint_view"
+            layout="@layout/search_input_hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/url_search_candidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/url_search_input_ll">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/input_url_flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:overScrollMode="never"/>
+
+        <ListView
+            android:id="@+id/view_url_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rounded_progressbar_white"
+            android:divider="@color/browser_info_color"
+            android:dividerHeight="@dimen/most_visited_pager_line_hight"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:stackFromBottom="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

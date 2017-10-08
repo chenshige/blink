@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/settings_list_height"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingEnd="@dimen/settings_list_item_text_marginstart"
+    android:paddingRight="@dimen/settings_list_item_text_marginstart"
+    android:paddingLeft="@dimen/settings_list_item_text_marginstart"
+    android:paddingStart="@dimen/settings_list_item_text_marginstart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/settings_list_item_text_margintop"
+        android:layout_marginTop="@dimen/settings_list_item_text_margintop">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/file_picker_item_text_left_padding"
+            android:layout_toEndOf="@id/icon"
+            android:layout_marginLeft="@dimen/file_picker_item_text_left_padding"
+            android:layout_toRightOf="@id/icon">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/file_picker_item_title_color"
+                android:textSize="@dimen/file_picker_item_title_size" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/content"
+                android:layout_below="@id/content"
+                android:textColor="@color/file_picker_item_desc_color"
+                android:textSize="@dimen/file_picker_item_desc_size"
+                android:layout_alignLeft="@id/content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

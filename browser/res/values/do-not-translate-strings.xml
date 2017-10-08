@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><!DOCTYPE resources [<!ENTITY about SYSTEM "about.xml">]>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--SWE TODO: localize this for all languages -->
+
+
+    <!-- Add for Wap2Estore Feature -->
+
+    <!--Strings for auto update notification feature -->
+    <!--String for the download default path -->
+
+    <array name="share_default_pkgname">
+        <item>com.facebook.katana</item>
+        <item>com.twitter.android</item>
+        <item>com.whatsapp</item>
+    </array>
+
+    <array name="share_default_appname">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>WhatsApp</item>
+    </array>
+
+    <array name="share_local_default_appname">
+        <item>@string/contextmenu_copy</item>
+        <item>@string/menu_browser_more</item>
+    </array>
+
+    <string name="menu_browser_more">More</string>
+    <array name="search_input_hint_before">
+        <item>http://</item>
+        <item>https://</item>
+        <item>www.</item>
+        <item>m.</item>
+        <item>wap.</item>
+    </array>
+
+    <array name="search_input_hint_after">
+        <item>.</item>
+        <item>/</item>
+        <item>.cn</item>
+        <item>.com</item>
+        <item>.org</item>
+    </array>
+
+    <array name="search_result_page">
+   <!--     <item>search.yahoo.com</item>
+        <item>www.bing.com</item>
+        <item>www.ask.com</item>
+        <item>www.looksmart.com</item>
+        <item>www.msn.com</item>
+        <item>lycos.com</item>
+        <item>cnn.com</item>
+        <item>infospace.com</item>
+        <item>hotbot.com</item>
+        <item>www.excite</item>
+        <item>infoseek.com</item>
+        <item>rambler.ru</item>
+        <item>www.google</item>
+        <item>nate.search.empas.com</item>
+        <item>busca.uol.com.br/www/index.html</item>
+        <item>www.baidu.com</item>
+        <item>m.baidu.com</item>
+        <item>szukaj.onet.pl</item>
+        <item>se.altavista.com/web</item>
+        <item>go.mail.ru</item>
+        <item>buscar.hispavista.com</item>
+        <item>rednano.sg/sfe/lwi.action</item>
+        <item>search.goo.ne.jp/web.jsp</item>
+        <item>pesquisa.sapo.pt</item>
+        <item>abcsok.no/index.html</item>
+        <item>search.tut.by/</item>
+        <item>eniro.se/query</item>
+        <item>szukaj.wp.pl/szukaj.html</item>
+        <item>search.atlas.cz</item>
+        <item>arianna.libero.it</item>
+        <item>buscador.terra.es/Default.aspx</item>
+        <item>search.daum.net</item>
+        <item>search.seznam.cz</item>
+        <item>search.centrum.cz/index.php</item>
+        <item>eniro.se</item>
+        <item>kvasir.no/nettsok</item>
+        <item>yandex.ru/yandsearch</item>
+        <item>find.in.gr/</item>
+        <item>search.ch/index.de.html</item>
+        <item>search.ch/index.fr.html</item>
+        <item>ricerca.alice.it/ricerca</item>
+        <item>netsprint.pl/serwis</item>
+        <item>search.naver.com</item>
+        <item>http://tcl.start.fyi/search</item>
+        <item>https://yandex.ru/search/</item>
+        <item>http://tcl-icloudcdn.tclclouds.com/mig-portal/browser/</item>
+        <item>www.so.com</item>
+        <item>m.so.com</item>
+        <item>m.sogou.com</item>
+        <item>www.sogou.com</item>-->
+    </array>
+
+    <string name="pref_open_debug">USB debugging</string>
+    <string name="pref_channel">Channel</string>
+    <string name="pref_new_features">New features</string>
+
+    <string name="adblockplus_label">Adblock Plus</string>
+
+</resources>
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_word_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/translate_language_padding"
+        android:paddingRight="@dimen/translate_language_padding"
+        android:singleLine="true"
+        android:text="English"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+</RelativeLayout>
+

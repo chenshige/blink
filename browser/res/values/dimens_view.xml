@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2010 The Android Open Source Project Licensed under the
+    Apache License, Version 2.0 (the "License"); you may not use this file
+    except in compliance with the License. You may obtain a copy of the
+    License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+    applicable law or agreed to in writing, software distributed under the
+    License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+    CONDITIONS OF ANY KIND, either express or implied. See the License for
+    the specific language governing permissions and limitations under the
+    License.
+-->
+<resources>
+    <!-- main interface -->
+    <dimen name="item_image_width">24dp</dimen>
+    <dimen name="main_activity_foot_font_size">14sp</dimen>
+    <dimen name="grid_history_url_top">10dp</dimen>
+    <dimen name="grid_recommond_item_padding">16dp</dimen>
+    <dimen name="grid_recommond_text_size">12sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="tab_button_width">48dp</dimen>
+    <dimen name="tab_button_horizontal_margin">4dp</dimen>
+    <dimen name="tab_content_margin_top">19dp</dimen>
+    <dimen name="icon_right_margin">10dp</dimen>
+
+    <dimen name="feedback_view_edit_height">195dp</dimen>
+    <dimen name="find_pop_view_height">48dp</dimen>
+    <dimen name="recommend_url_height">200dp</dimen>
+    <dimen name="main_uncard_height">260dp</dimen>
+    <dimen name="search_card_view_padding">17dp</dimen>
+    <dimen name="search_card_view_padding_bottom">3dp</dimen>
+    <dimen name="webview_padding_top">16dp</dimen>
+    <dimen name="empty_txt_top">5dp</dimen>
+    <dimen name="nav_on_edit_width_normal">175dp</dimen>
+    <dimen name="nav_on_edit_width_high_screen">245dp</dimen>
+    <dimen name="nav_view_pager_landscape_width">352dp</dimen>
+    <dimen name="nav_margin_left_on_edit">20dp</dimen>
+    <dimen name="nav_margin_top_on_edit">25dp</dimen>
+    <dimen name="nav_item_size">70dp</dimen>
+    <dimen name="nav_icon_size">36dp</dimen>
+    <dimen name="nav_icon_container_height">58dp</dimen>
+    <dimen name="nav_icon_container_width">56dp</dimen>
+    <dimen name="search_card_margin_landscape">90dp</dimen>
+    <dimen name="nav_container_margin_landscape">80dp</dimen>
+    <dimen name="head_logo_margin_top_landscape">12dp</dimen>
+    <dimen name="main_head_view_height">148dp</dimen>
+    <dimen name="nav_container_off_edit_landscape_margin_top">160dp</dimen>
+    <dimen name="nav_container_off_edit_width">490dp</dimen>
+    <dimen name="toast_horizontal_margin">24dp</dimen>
+</resources>

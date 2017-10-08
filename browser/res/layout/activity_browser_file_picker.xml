@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/file_picker_item_horizontal_padding"
+        android:paddingLeft="@dimen/file_picker_item_horizontal_padding"
+        android:paddingEnd="@dimen/file_picker_item_horizontal_padding"
+        android:paddingStart="@dimen/file_picker_item_horizontal_padding"
+        android:paddingTop="@dimen/file_picker_item_horizontal_padding">
+
+        <TextView
+            android:id="@+id/current_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/file_picker_item_desc_color"
+            android:textSize="@dimen/file_picker_item_desc_size" />
+
+        <TextView
+            android:id="@+id/select_location"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/file_picker_default_loaction_text_height"
+            android:gravity="center_vertical"
+            android:textColor="@color/file_picker_select_location_color"
+            android:textSize="@dimen/file_picker_item_desc_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/add_book_mark_save"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/linear_view_shape" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/select"
+        android:layout_below="@id/path"
+        android:layout_marginBottom="-10dp" />
+
+</RelativeLayout>

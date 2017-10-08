@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmark_preloads">
+        <item>@raw/favicon_google</item>
+        <item>@raw/thumb_google</item>
+        <item>@raw/favicon_yahoo</item>
+        <item>@raw/thumb_yahoo</item>
+    </array>
+</resources>

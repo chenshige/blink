@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blink.browser.homepages.clone.CloneableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_item"
+    android:layout_width="@dimen/nav_item_size"
+    android:layout_height="@dimen/nav_item_size">
+
+    <RelativeLayout
+        android:layout_width="@dimen/nav_icon_container_width"
+        android:layout_height="@dimen/nav_icon_container_height"
+        android:layout_centerHorizontal="true">
+
+        <com.blink.browser.view.RoundImageView
+            android:id="@+id/recommend_item_icon"
+            android:layout_width="@dimen/nav_icon_size"
+            android:layout_height="@dimen/nav_icon_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app:type="round"
+            app:borderRadius="3dp"
+            tools:src="@mipmap/ic_launcher_browser" />
+
+        <ImageView
+            android:id="@+id/recommend_item_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_browser_delete_navigation_dark"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recommend_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="false"
+        android:textColor="@color/grid_common_text_color"
+        android:textSize="@dimen/grid_recommond_text_size"
+        tools:text="facebook" />
+
+</com.blink.browser.homepages.clone.CloneableRelativeLayout>
+

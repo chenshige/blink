@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.blink.browser.widget.PagerSlidingTabStrip
+        android:id="@+id/pager_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/browser_TabPageIndicator_height"
+        android:background="@color/settings_title_background"
+        app:pstsIndicatorColor="@color/sliding_tab_indicator_color"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsIndicatorOffset="40dp"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/tab_under_line_color"
+        app:pstsUnderlineHeight="1dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never"/>
+
+    <TextView
+        android:id="@+id/storage_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/browser_info_empty_bottom"
+        android:background="@color/settings_title_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/select_search_engine_padding"
+        android:paddingStart="@dimen/select_search_engine_padding"
+        android:textColor="@color/history_markbook_color"
+        android:textSize="12sp"/>
+
+</LinearLayout>

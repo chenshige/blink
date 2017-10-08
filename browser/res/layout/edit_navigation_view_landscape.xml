@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="@dimen/nav_margin_left_on_edit"
+        android:layout_marginStart="@dimen/nav_margin_left_on_edit"
+        android:layout_marginTop="@dimen/nav_margin_top_on_edit"
+        android:layout_toLeftOf="@+id/edittext_container"
+        android:layout_toStartOf="@+id/edittext_container"
+        android:clipChildren="false">
+
+        <com.blink.browser.homepages.clone.ClonedView
+            android:id="@+id/item_clone"
+            android:layout_width="@dimen/nav_item_size"
+            android:layout_height="@dimen/nav_item_size" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/edittext_container"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical"
+        android:paddingEnd="16dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingStart="16dip">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DEFFFFFF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/title"
+            style="@style/BrowserEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="19dp"
+            android:layout_marginTop="22dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:inputType="textCapSentences|textNoSuggestions"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DEFFFFFF"
+            android:textSize="@dimen/history_title_size" />
+
+        <View
+            android:id="@+id/add_link_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="11dp"
+            android:background="@color/add_book_mark_line" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="25dp"
+            android:text="@string/location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DEFFFFFF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/address"
+            style="@style/BrowserEditText"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginTop="22dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/http"
+            android:inputType="textUri"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DEFFFFFF"
+            android:textSize="@dimen/history_title_size" />
+
+        <View
+            android:id="@+id/add_link_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="11dp"
+            android:background="@color/add_book_mark_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="72dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:padding="4dp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="#FF5DA7FD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="30dp"
+            android:padding="4dp"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="#FF5DA7FD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

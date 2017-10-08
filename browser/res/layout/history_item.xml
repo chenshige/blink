@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?android:attr/selectableItemBackground"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_history_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/history_item_height"
+        android:background="@color/transparent">
+
+        <com.blink.browser.view.RoundImageView
+            android:id="@+id/logo_history_item"
+            android:layout_width="@dimen/history_icon_width"
+            android:layout_height="@dimen/history_icon_width"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/history_icon_left"
+            app:type="rectangle"
+            android:layout_marginLeft="@dimen/history_icon_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/history_content_margin_right"
+            android:layout_marginStart="@dimen/history_icon_title_gap"
+            android:layout_toEndOf="@id/logo_history_item"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/history_content_margin_right"
+            android:layout_marginLeft="@dimen/history_icon_title_gap"
+            android:layout_toRightOf="@id/logo_history_item">
+
+            <TextView
+                android:id="@+id/title_history_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/history_text_hight"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/browser_info_item_title"
+                android:textSize="@dimen/history_title_size"/>
+
+            <TextView
+                android:id="@+id/url_history_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/history_url_hight"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/browser_info_item_url"
+                android:textSize="@dimen/history_url_size"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_history_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:scaleType="center"
+            android:src="@drawable/ic_browser_home_close"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/translate_language_padding"
+        android:layout_marginTop="@dimen/translate_language_padding"
+        android:background="@color/activity_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/translate_select_language_descript"
+            android:textColor="@color/normal_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/translate_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/translate_language_padding"
+            android:layout_marginRight="@dimen/translate_language_padding"
+            android:src="@drawable/ic_browser_dialog_arrow_down" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/language_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/translate_language_padding"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/system_default_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/translate_language_padding"
+        android:layout_marginRight="@dimen/translate_language_padding"
+        android:text="English"
+        android:textColor="@color/translate_color"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="@dimen/translate_language_padding"
+        android:layout_marginRight="@dimen/translate_language_padding"
+        android:layout_marginTop="@dimen/translate_language_padding">
+
+        <TextView
+            android:id="@+id/translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/translate_button"
+            android:textColor="@color/translate_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/translate_language_padding"
+            android:layout_marginRight="@dimen/translate_language_padding"
+            android:layout_toLeftOf="@id/translate"
+            android:textColor="@color/normal_text_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

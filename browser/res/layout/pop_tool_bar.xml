@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@color/parent_view_general_background">
+
+    <TextView
+        android:id="@+id/bottom_bar_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/translate_language_padding"
+        android:layout_marginStart="@dimen/translate_language_padding"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/snakebar_ellipsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/bottom_bar_content"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_undo"
+        android:layout_width="@dimen/history_clear_all_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/btmbar_btn_text_color"
+        android:textSize="14dp" />
+
+</RelativeLayout>

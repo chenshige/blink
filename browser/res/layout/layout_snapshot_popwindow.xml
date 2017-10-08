@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/popwindow_update"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginStart="@dimen/history_icon_left"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modify"
+                android:textColor="@color/bookmark_pop_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_movebookmark"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginStart="@dimen/history_icon_left"
+            android:layout_marginBottom="8dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to bookmark"
+                android:textColor="@color/bookmark_pop_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_add_homepage"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginStart="@dimen/history_icon_left"
+            android:layout_marginBottom="8dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to homepage"
+                android:textColor="@color/bookmark_pop_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_add_desktop"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginStart="@dimen/history_icon_left"
+            android:layout_marginBottom="8dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to desktop"
+                android:textColor="@color/bookmark_pop_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popwindow_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginStart="@dimen/history_icon_left"
+            android:layout_marginBottom="8dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/bookmark_pop_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

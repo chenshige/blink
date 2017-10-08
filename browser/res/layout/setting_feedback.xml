@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blink.browser.view.FractionTranslateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/contact_us_on_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/facebook_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_contact_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/contact_us_on_facebook"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/feedback_content"
+                style="@style/BrowserEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_view_edit_height"
+                android:background="@drawable/shape_feedback_input_bg"
+                android:gravity="top|start"
+                android:hint="@string/write_advice_please"
+                android:inputType="textMultiLine|textWebEditText|textNoSuggestions"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLength="1000"
+                android:paddingBottom="86dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_26_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/choose_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:minWidth="70dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/text_count_can_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/count_limit_toast_color_1"
+                android:gravity="end"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_26_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/image_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/choose_pic"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/choose_pic"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/choose_pic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/email"
+                style="?android:attr/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_feedback_input_bg"
+                android:hint="@string/please_leave_your_email"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="28dp"
+                android:paddingStart="28dp"
+                android:paddingRight="28dp"
+                android:paddingLeft="28dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_26_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/optional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="28dp"
+                android:text="@string/optional"
+                android:textColor="@color/black_26_color"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="28dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.blink.browser.view.FractionTranslateLayout>

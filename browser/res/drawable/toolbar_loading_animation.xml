@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close01"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close02"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close01"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close04"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close05"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close06"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close07"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+    <item
+        android:drawable="@drawable/ic_browser_toolbar_close08"
+        android:duration="@integer/toolbar_loading_animation_duration" />
+
+</animation-list>
